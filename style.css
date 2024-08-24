@@ -1,0 +1,815 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+header {
+    background-color: white;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    
+    
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+    padding-left: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px 20px; /* Adds padding around the text */
+    border-radius: 5px; /* Rounds the corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+nav ul li a:hover {
+    background-color: #42029b; /* Light grey background on hover */
+    color: white; /* Change text color on hover */
+}
+
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    padding-right: 30px;
+}
+
+.signin, .explore {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.signin {
+    background-color: white;
+    border: 2px solid #6A1B9A;
+    color: #42029b;
+}
+
+.signin:hover {
+    background-color: #42029b; /* Background changes to dark purple */
+    color: white; /* Text color changes to white */
+    border-color: #42029b; /* Border color matches the background */
+}
+
+.explore {
+    background-color: #42029b;
+    color: white;
+}
+
+.explore:hover {
+    background-color: #6A1B9A; /* Background changes to a lighter purple */
+    color: white; /* Text color remains white */
+}
+
+
+.banner {
+    background-color: #42029b;
+    color: white;
+    text-align: center;
+    padding: 5px ;
+    font-size: 16px;
+    height: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 15px;
+   
+}
+
+.banner a {
+    color: white;
+    text-decoration: underline;
+    transition: color 0.3s, text-decoration 0.3s; /* Smooth transition for hover effects */
+}
+
+.banner a:hover {
+    color:black; /* Change text color to gold on hover */
+    text-decoration: none; /* Remove underline on hover */
+}
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #EDE7F6;
+    
+    
+   
+}
+
+.text-content {
+    max-width: 900px;
+    padding-top: 0px;
+    padding-left: 40px;
+    
+}
+.text-content .p{
+    color: black;
+    width: 800px;
+    
+}
+
+.partner {
+    color: #4CAF50;
+    font-weight: bold;
+    position: relative;
+    padding-left: 30px; /* Adjust to make space for the checkmark */
+}
+
+.partner::before {
+    content: "\2714"; /* Unicode for the checkmark */
+    font-size: 14px;
+    color: white;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+h1 {
+    color:black;
+    margin: 20px 0;
+    font-size: 2.5em;
+   
+}
+
+h1 span {
+    color: #FF9800;
+}
+
+.view-courses {
+    background-color:#42029b;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+}
+
+.view-courses:hover {
+    background-color: #42029b; /* Slightly lighter shade of purple on hover */
+    transform: scale(1.05); /* Slight zoom-in effect on hover */
+    color: white;
+}
+
+.image-content {
+    position: relative;
+    text-align: center; /* Centers the content inside the container */
+}
+
+.image-content img {
+    width: 650px;
+    border-radius: 10px;
+    padding-right: 45px; /* Adds space on the right of the image */
+    display: inline-block; /* Makes the image behave like an inline element */
+    padding-top: 20px;
+}
+
+
+.stats {
+    display: flex;
+    gap: 20px;
+    margin-top: 80px;
+}
+
+.stat-item {
+    background-color: #fff;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.stat-item:hover {
+    transform: scale(1.05); /* Slightly enlarge the item on hover */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Increase shadow intensity on hover */
+}
+
+.stat-item i {
+    color: #512DA8; /* Color of the icons */
+    margin-bottom: 10px; /* Space between icon and text */
+    transition: color 0.3s ease; /* Smooth transition for icon color change */
+}
+
+.stat-item:hover i {
+    color:  #42029b; /* Change icon color on hover */
+}
+
+.stat-item p {
+    margin: 0;
+    color: #333;
+    font-size: 1.2rem;
+}
+.companies-section {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #fff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+
+
+.jobs {
+    font-size: 24px;
+    font-weight: bold;
+    color: #512DA8;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    position: absolute;
+    top: -50px; /* Start outside the view */
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    animation: slideIn 1s ease-in-out forwards;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.jobs:hover {
+    background-color: #512DA8; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+    transform: translateX(-50%) scale(1.05); /* Slightly scale up the element on hover */
+}
+
+@keyframes slideIn {
+    to {
+        top: 770px; /* The final position where the box will be placed */
+    }
+}
+
+.companies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.companies img {
+    max-height: 40px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease, filter 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.companies img:hover {
+    opacity: 1; /* Increases the opacity on hover */
+    filter: brightness(1.3); /* Brightens the image on hover */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+
+.more-companies {
+    font-size: 14px;
+    color: #888;
+    margin-top: 10px;
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.more-companies:hover {
+    color: #512DA8; /* Change to your desired hover color */
+    cursor: pointer; /* Optional: changes cursor to pointer to indicate interactivity */
+}
+
+.stats-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.stat-box {
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    border-radius: 8px; /* Optional: Adds rounded corners */
+    margin: 0 10px; /* Adds space between boxes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Outline shadow effect */
+}
+
+.stat-box:hover {
+    transform: translateY(-10px) scale(1.05); /* Move up and slightly enlarge */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    background-color: #f5f5f5; /* Light background color on hover */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.stat-box:hover h2, 
+.stat-box:hover p {
+    color: #000; /* Change text color to black on hover */
+}
+
+.stat-box .icon img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.stat-box h2 {
+    font-size: 36px;
+    color: #512DA8;
+    margin-bottom: 5px;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.stat-box p {
+    font-size: 14px;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+.container {
+    text-align: center; /* Center-aligns text horizontally */
+    padding: 20px;
+    max-width: 800px; /* Optional: Sets a max-width for better readability */
+    margin: 0 auto; /* Centers the container horizontally */
+}
+
+.container h1 {
+    font-size: 1.2em; /* Adjust size as needed */
+    color:rgb(247, 143, 7); /* Dark color for better contrast */
+    margin-bottom: 10px;
+}
+
+.container h2 {
+    font-size: 1.8em; /* Adjust size as needed */
+    color:black; /* Slightly lighter color */
+    margin-bottom: 20px;
+}
+
+.container p {
+    font-size: 1.2em; /* Adjust size as needed */
+    color: #444343; /* Medium color for readability */
+    line-height: 1.5; /* Improves readability with line spacing */
+}
+.container2 {
+    display: flex;
+    justify-content: space-between; /* Distributes space between items */
+    align-items: flex-start; /* Aligns items at the top */
+    flex-wrap: wrap; /* Allows wrapping if there's not enough space */
+    gap: 50px; /* Reduces space between sections */
+    padding-left: 10px;
+}
+
+.section {
+    flex: 1; /* Makes all sections equally wide */
+    min-width: 200px; /* Reduces minimum width of each section */
+    min-height: 300px; /* Ensures a minimum height for each section */
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+    padding: 10px; /* Reduces padding inside the section */
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 15px; /* Adds rounded corners to the section box */
+    text-align: center; /* Centers the text and image horizontally */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Adjusts the shadow for smaller boxes */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition on hover */
+}
+
+
+.section:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Adjusts shadow on hover */
+    transform: translateY(-3px); /* Adjusts lift on hover */
+}
+
+.section img {
+    width: 70%; /* Adjusts image width relative to the section */
+    max-width: 250px; /* Ensures the image doesn't exceed 250px in width */
+    height: auto; /* Maintains the aspect ratio */
+    margin-top: 5px; /* Adds space between the text and the image */
+    border-radius: 5px; /* Optional: Adds rounded corners to the image */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+.container2 h3{
+    font-size: 1.2em;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.container2 p{
+    color: #646262;
+    padding-top: 5px;
+}
+.career-track {
+    text-align: left;
+    padding: 20px;
+    background-color: #6f42c1;
+    color: #fff;
+    height: 400px;
+}
+.career-track h3{
+    color: rgb(242, 123, 37);
+
+}
+
+.small-icon {
+    width: 30px;
+    height: 30px;
+    
+     /* Space between the image and text */
+}
+
+.container3{
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adjusted shadow effect */
+}
+
+h1 {
+    color: #6c3f99;
+    margin-bottom: 20px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 45%;
+    text-align: left;
+    position: relative;
+    align-items: flex-start;
+}
+
+
+.card h2 {
+    color: #333;
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.card p {
+    color: #555;
+    margin: 10px 0;
+}
+.manual{
+    height: 30%;
+    width:100px;
+}
+.testing{
+    padding-top: 20px;
+    font-size: 40px;
+}
+
+.enroll {
+    position: absolute; /* Positioned relative to the card */
+    top: -45px; /* Adjust this value to control vertical positioning */
+    left: 150px; /* Align it within the card */
+    background-color: #fff;
+    padding: 5px 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    font-weight: bold;
+    color: #333;
+    z-index: 10;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.enroll:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+    background-color: #f7f7f7;
+}
+
+.enroll img {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-left: -10px;
+    filter: blur(0.4px);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.enroll img:hover {
+    transform: scale(1.1);
+    filter: blur(0px);
+}
+
+.enroll img:first-child {
+    margin-left: 0;
+}
+
+.badges {
+    position: absolute; /* Absolute positioning to place badges at the top */
+    top: 15px; /* Adjust this value as needed */
+    right: 10px; /* Adjust this value as needed */
+    display: flex;
+    flex-direction: row; /* Horizontal layout */
+    gap: 10px; /* Space between badges */
+}
+
+.badges span {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+.badges .limited-seats {
+    background-color: #ff7f50; /* Orange */
+    color: white; /* White text color */
+    transition: box-shadow 0.4s ease; /* Smooth transition for the shadow */
+}
+.badges .limited-seats:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Shadow effect on hover */
+}
+
+
+.badges .discount {
+    background-color: #4caf50;
+    color: white;
+    transition: box-shadow 0.4s ease; /* Smooth transition for the shadow */
+}
+
+.badges .discount:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Shadow effect on hover */
+}
+
+.designed-by {
+    position: absolute; /* Position it absolutely */
+    top: 60px; /* Adjust top position as needed */
+    right: 10px; /* Adjust right position as needed */
+    background-color: #f0f0f0; /* Background color (optional) */
+    padding: 5px 10px; /* Padding */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Initial shadow */
+    font-size: 0.9rem; /* Font size */
+    color: #333; /* Text color */
+    transition: box-shadow 0.3s ease; /* Smooth transition for shadow effect */
+}
+
+.designed-by:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+}
+
+
+.brand-logos {
+    display: flex; /* Align images in a row */
+    gap: -30px; /* Positive space between images */
+}
+
+.brand-logos .logo-container {
+    position: relative; /* Position relative to handle absolute positioning inside */
+    width: 50px; /* Size of the circular background */
+    height: 50px; /* Size of the circular background */
+    display: flex;
+    align-items: center; /* Center image vertically */
+    justify-content: center; /* Center image horizontally */
+}
+
+.brand-logos .logo-container::before {
+    content: ""; /* Empty content for the circle */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff; /* Background color of the circle */
+    border-radius: 50%; /* Make it circular */
+    z-index: -1; /* Place it behind the image */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for the circle */
+}
+
+.brand-logos img {
+    width: 20px; /* Adjust width as needed */
+    height: 20px; /* Maintain aspect ratio */
+    border-radius: 100%; /* Make images circular */
+}
+
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    color: #0730c7 !important; /* Default color for text in .details */
+}
+
+.details p { /* Corrected selector */
+    font-size: 0.9rem;
+    color: #0730c7 !important; /* Specific color for <p> elements inside .details */
+    margin: 5px 0;
+}
+
+
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.buttons button {
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for color change */
+}
+
+.buttons .brochure {
+    background-color:rgb(142, 141, 141); /* Initial background color */
+    color: white; /* Text color */
+}
+
+.buttons .brochure:hover {
+    background-color: #272728; /* Background color on hover */
+}
+
+.buttons .learn-more {
+    background-color: #0056b3; /* Initial background color */
+    color: white; /* Text color */
+}
+
+.buttons .learn-more:hover {
+    background-color: rgb(17, 2, 63); /* Background color on hover */
+}
+
+
+.enroll2 {
+    position: absolute; /* Positioned relative to the card */
+    top: -45px; /* Adjust this value to control vertical positioning */
+    left: 150px; /* Align it within the card */
+    background-color: #fff;
+    padding: 5px 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    font-weight: bold;
+    color: #333;
+    z-index: 10;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.enroll2:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+    background-color: #f7f7f7;
+}
+
+.enroll2 img {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-left: -10px;
+    filter: blur(0.4px);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.enroll2:hover img {
+    transform: scale(1.1);
+    filter: blur(0px);
+}
+
+.enroll2 img:first-child {
+    margin-left: 0;
+}
+
+.automation{
+    padding-top: 20px;
+    font-size: 40px;
+}
+
+.details2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    color: #0730c7 !important; /* Ensures the default color is applied */
+}
+
+.details2 p {
+    font-size: 0.9rem;
+    color: #052bb5 !important; /* Ensures the specific color is applied */
+    margin: 5px 0;
+}
+
+
+
+
+.container4{
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding-top: 150px;
+
+}
+
+h1 {
+    color: #6c3f99;
+    margin-bottom: 20px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 45%;
+    text-align: left;
+}
+
+.card img {
+    max-width: 20%;
+    border-radius: 8px;
+}
+
+.card h2 {
+    color: #333;
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.card p {
+    color: #555;
+    margin: 10px 0;
+}
+
+
+.details p {
+    font-size: 0.9rem;
+    color: #6c3f99;
+    margin: 5px 0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.brochure {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+button.learn-more {
+    background-color: #6c3f99;
+    color: #fff;
+}
+
+
