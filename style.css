@@ -46,7 +46,37 @@ nav ul li a:hover {
     background-color: #42029b; /* Light grey background on hover */
     color: white; /* Change text color on hover */
 }
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%; /* Full width for nav links */
+    }
+    
+    nav ul li a {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
 
+@media (max-width: 480px) {
+    .logo {
+        width: 120px; /* Smaller logo for smaller screens */
+    }
+    
+    nav ul {
+        gap: 5px;
+    }
+    
+    nav ul li a {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+}
 
 .buttons {
     display: flex;
@@ -84,6 +114,26 @@ nav ul li a:hover {
     color: white; /* Text color remains white */
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    .buttons {
+        padding-right: 15px; /* Adjust padding for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .buttons {
+        flex-direction: column; /* Stack buttons vertically on small screens */
+        align-items: flex-start; /* Align buttons to the start */
+        padding-right: 0; /* Remove right padding */
+    }
+    
+    .signin, .explore {
+        width: 100%; /* Make buttons full width */
+        padding: 12px 0; /* Adjust padding for better spacing */
+        text-align: center; /* Center text inside buttons */
+    }
+}
 
 .banner {
     background-color: #42029b;
@@ -106,6 +156,26 @@ nav ul li a:hover {
 .banner a:hover {
     color:black; /* Change text color to gold on hover */
     text-decoration: none; /* Remove underline on hover */
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .banner {
+        font-size: 14px; /* Adjust font size for medium screens */
+        padding-top: 10px; /* Adjust top padding */
+        height: auto; /* Allow height to adjust based on content */
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        font-size: 12px; /* Further reduce font size for smaller screens */
+        padding: 10px; /* Increase padding for better spacing */
+        height: auto; /* Allow height to adjust based on content */
+    }
+    
+    .banner a {
+        font-size: 12px; /* Adjust font size of links for smaller screens */
+    }
 }
 .main-content {
     display: flex;
@@ -231,6 +301,52 @@ h1 span {
     color: #333;
     font-size: 1.2rem;
 }
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: flex-start; /* Align items to the start */
+        padding: 20px; /* Adjust padding */
+    }
+    
+    .text-content {
+        padding-left: 0; /* Remove left padding */
+        max-width: 100%; /* Make text content full width */
+    }
+    
+    .view-courses {
+        width: 100%; /* Make button full width */
+    }
+    
+    .image-content img {
+        padding-right: 0; /* Remove right padding for image */
+    }
+    
+    .stats {
+        flex-direction: column; /* Stack stat items vertically */
+        align-items: center; /* Center stat items */
+    }
+    
+    .stat-item {
+        flex: 1 1 100%; /* Make each stat item full width */
+        margin-bottom: 20px; /* Add margin between items */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em; /* Reduce font size for smaller screens */
+    }
+    
+    .view-courses {
+        padding: 10px 20px; /* Adjust padding for smaller screens */
+    }
+    
+    .stat-item {
+        padding: 10px; /* Adjust padding for smaller screens */
+        font-size: 0.9rem; /* Adjust font size for text */
+    }
+}
 .companies-section {
     text-align: center;
     padding: 20px 0;
@@ -302,6 +418,42 @@ h1 span {
     color: #512DA8; /* Change to your desired hover color */
     cursor: pointer; /* Optional: changes cursor to pointer to indicate interactivity */
 }
+/* Responsive Design */
+@media (max-width: 768px) {
+    .jobs {
+        font-size: 20px; /* Adjust font size */
+        padding: 8px 16px; /* Adjust padding */
+    }
+
+    .companies {
+        gap: 15px; /* Reduce gap between images */
+    }
+    
+    .companies img {
+        max-height: 30px; /* Reduce image size */
+    }
+}
+
+@media (max-width: 480px) {
+    .jobs {
+        font-size: 18px; /* Further reduce font size */
+        padding: 6px 12px; /* Further adjust padding */
+        top: -30px; /* Adjust top position */
+    }
+
+    .companies {
+        gap: 10px; /* Further reduce gap between images */
+    }
+    
+    .companies img {
+        max-height: 25px; /* Further reduce image size */
+    }
+    
+    .more-companies {
+        font-size: 12px; /* Adjust font size for smaller screens */
+    }
+}
+
 
 .stats-section {
     display: flex;
@@ -350,6 +502,37 @@ h1 span {
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: color 0.3s ease; /* Smooth color transition */
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .stat-box {
+        font-size: 18px; /* Adjust font size for medium screens */
+        flex: 1 1 calc(50% - 20px); /* Adjust size of stat boxes */
+    }
+
+    .stat-box h2 {
+        font-size: 28px; /* Adjust heading font size */
+    }
+    
+    .stat-box p {
+        font-size: 12px; /* Adjust paragraph font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .stat-box {
+        font-size: 16px; /* Further adjust font size for smaller screens */
+        flex: 1 1 100%; /* Make each stat box full width */
+        margin: 10px 0; /* Adjust margin */
+    }
+
+    .stat-box h2 {
+        font-size: 24px; /* Further adjust heading font size */
+    }
+    
+    .stat-box p {
+        font-size: 10px; /* Further adjust paragraph font size */
+    }
 }
 .container {
     text-align: center; /* Center-aligns text horizontally */
@@ -420,6 +603,72 @@ h1 span {
 .container2 p{
     color: #646262;
     padding-top: 5px;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container h1 {
+        font-size: 1em; /* Adjust font size for smaller screens */
+    }
+
+    .container h2 {
+        font-size: 1.5em; /* Adjust font size for smaller screens */
+    }
+
+    .container p {
+        font-size: 1em; /* Adjust font size for smaller screens */
+    }
+
+    .container2 {
+        gap: 20px; /* Reduce space between sections */
+    }
+
+    .section {
+        min-width: 150px; /* Reduce minimum width for smaller screens */
+        min-height: 250px; /* Reduce minimum height for smaller screens */
+        padding: 15px; /* Adjust padding */
+    }
+
+    .section img {
+        width: 80%; /* Adjust image width */
+    }
+}
+
+@media (max-width: 480px) {
+    .container h1 {
+        font-size: 0.9em; /* Further reduce font size */
+    }
+
+    .container h2 {
+        font-size: 1.2em; /* Further reduce font size */
+    }
+
+    .container p {
+        font-size: 0.9em; /* Further reduce font size */
+    }
+
+    .container2 {
+        flex-direction: column; /* Stack sections vertically */
+        gap: 10px; /* Further reduce space between sections */
+    }
+
+    .section {
+        min-width: 100%; /* Make each section full width */
+        min-height: auto; /* Remove fixed height */
+        padding: 10px; /* Further adjust padding */
+    }
+
+    .section img {
+        width: 100%; /* Make image full width of the section */
+        max-width: none; /* Remove max-width constraint */
+    }
+
+    .container2 h3 {
+        font-size: 1em; /* Adjust font size for smaller screens */
+    }
+
+    .container2 p {
+        font-size: 0.8em; /* Adjust font size for smaller screens */
+    }
 }
 .career-track {
     text-align: left;
@@ -731,7 +980,60 @@ h1 {
     margin: 5px 0;
 }
 
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .card {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .career-track {
+        height: auto; /* Adjust height for smaller screens */
+        padding: 15px;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .enroll, .enroll2 {
+        top: -35px; /* Adjust positioning for smaller screens */
+        left: 10px; /* Adjust positioning for smaller screens */
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+    }
+
+    .badges {
+        top: 10px; /* Adjust positioning for smaller screens */
+        right: 5px; /* Adjust positioning for smaller screens */
+        flex-direction: column; /* Stack badges vertically */
+    }
+
+    .details, .details2 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .brand-logos {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
 
 
 .container4{
