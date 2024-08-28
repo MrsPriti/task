@@ -12,18 +12,18 @@ body {
 header {
     background-color: white;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-    padding: 10px 0; /* Add some padding to the header */
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px; /* Add padding to the navbar for spacing */
+    
 }
 
 .logo {
     width: 150px;
+    padding-left: 20px;
 }
 
 nav ul {
@@ -55,7 +55,7 @@ nav ul li a:hover {
     }
     
     nav ul {
-        flex-direction: column;
+        flex-direction: row;
         gap: 10px;
         width: 100%; /* Full width for nav links */
         padding: 0; /* Remove padding */
@@ -72,7 +72,7 @@ nav ul li a:hover {
     }
     
     nav ul {
-        gap: 5px;
+        gap: 15px;
     }
     
     nav ul li a {
@@ -116,26 +116,34 @@ nav ul li a:hover {
     color: white; /* Text color remains white */
 }
 
-/* Responsive Design */
+/* Responsive Design for Buttons */
 @media (max-width: 768px) {
     .buttons {
-        padding-right: 15px; /* Adjust padding for smaller screens */
+        display: flex; /* Ensure flexbox is applied */
+        flex-direction: row; /* Keep buttons aligned horizontally */
+        justify-content: center; /* Center buttons horizontally */
+        gap: 10px; /* Add some space between buttons */
     }
 }
 
 @media (max-width: 480px) {
     .buttons {
-        flex-direction: column; /* Stack buttons vertically on small screens */
-        align-items: flex-start; /* Align buttons to the start */
+        display: flex; /* Ensure flexbox is applied */
+        flex-direction: row; /* Keep buttons aligned horizontally */
+        justify-content: center; /* Center buttons horizontally */
+        gap: 10px; /* Ensure consistent spacing between buttons */
         padding-right: 0; /* Remove right padding */
     }
     
     .signin, .explore {
-        width: 100%; /* Make buttons full width */
-        padding: 12px 0; /* Adjust padding for better spacing */
+        width: auto; /* Keep buttons at their natural width */
+        padding: 12px 20px; /* Adjust padding for better spacing */
         text-align: center; /* Center text inside buttons */
+        margin: 5px; /* Add margin to separate the buttons */
     }
 }
+
+
 
 
 .banner {
@@ -349,7 +357,7 @@ h1 span {
     background-color: #fff;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
-    position: relative; /* Ensure relative positioning for child elements */
+    
 }
 
 .jobs {
@@ -377,13 +385,57 @@ h1 span {
 
 @keyframes slideIn {
     from {
-        top: -50px; /* Start from above the view */
+        top: -730px; /* Start from outside the view */
     }
     to {
-        top: 0; /* Final position where the box will be placed */
+        top: 730px; /* Final position where the box will be placed */
     }
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    .jobs {
+        font-size: 20px;
+        padding: 8px 16px;
+        top: 30px; /* Adjust the top position */
+        animation: slideIn768 1s ease-in-out forwards;
+    }
+
+    @keyframes slideIn768 {
+        from {
+            top: -90px; /* Start from above the view */
+        }
+        to {
+            top: 30px; /* Final position where the box will be placed */
+        }
+    }
+
+    .companies-section {
+        padding: 15px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .jobs {
+        font-size: 18px;
+        padding: 6px 12px;
+        top: 20px; /* Adjust the top position for smaller screens */
+        animation: slideIn480 1s ease-in-out forwards;
+    }
+
+    @keyframes slideIn480 {
+        from {
+            top: -1375px; /* Start from above the view */
+        }
+        to {
+            top: 1375px; /* Final position where the box will be placed */
+        }
+    }
+
+    .companies-section {
+        padding: 10px 0;
+    }
+}
 .companies {
     display: flex;
     justify-content: center;
@@ -419,38 +471,34 @@ h1 span {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .jobs {
-        font-size: 20px; /* Adjust font size */
-        padding: 8px 16px; /* Adjust padding */
-        top: -30px; /* Adjust top position */
+    .companies {
+        gap: 15px; /* Reduce gap between logos */
+        margin-top: 30px; /* Adjust margin for smaller screens */
     }
 
-    .companies {
-        gap: 15px; /* Reduce gap between images */
-    }
-    
     .companies img {
-        max-height: 30px; /* Reduce image size */
+        max-height: 30px; /* Reduce logo size */
+    }
+
+    .more-companies {
+        font-size: 13px; /* Slightly smaller text for smaller screens */
+        margin-top: 8px;
     }
 }
 
 @media (max-width: 480px) {
-    .jobs {
-        font-size: 18px; /* Further reduce font size */
-        padding: 6px 12px; /* Further adjust padding */
-        top: -20px; /* Adjust top position */
+    .companies {
+        gap: 10px; /* Further reduce gap between logos */
+        margin-top: 20px; /* Further adjust margin for smaller screens */
     }
 
-    .companies {
-        gap: 10px; /* Further reduce gap between images */
-    }
-    
     .companies img {
-        max-height: 25px; /* Further reduce image size */
+        max-height: 25px; /* Further reduce logo size */
     }
-    
+
     .more-companies {
-        font-size: 12px; /* Adjust font size for smaller screens */
+        font-size: 12px; /* Smaller text for smaller screens */
+        margin-top: 5px;
     }
 }
 
@@ -470,7 +518,7 @@ h1 span {
     border-radius: 8px; /* Optional: Adds rounded corners */
     margin: 10px; /* Add margin between boxes */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Outline shadow effect */
-    flex: 1 1 calc(33% - 20px); /* Adjust size of stat boxes */
+    
 }
 
 .stat-box:hover {
@@ -628,13 +676,13 @@ h1 span {
     }
 
     .section {
-        min-width: 150px; /* Reduce minimum width for smaller screens */
+        min-width: 100px; /* Reduce minimum width for smaller screens */
         min-height: 250px; /* Reduce minimum height for smaller screens */
         padding: 15px; /* Adjust padding */
     }
 
     .section img {
-        width: 80%; /* Adjust image width */
+        width: 100%; /* Adjust image width */
     }
 }
 
@@ -663,7 +711,7 @@ h1 span {
     }
 
     .section img {
-        width: 100%; /* Make image full width of the section */
+        width: 20%; /* Make image full width of the section */
         max-width: none; /* Remove max-width constraint */
     }
 
@@ -693,7 +741,38 @@ h1 span {
     width: 30px;
     height: 30px;
 }
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .career-track {
+        padding: 15px;
+        height: auto; /* Adjust height based on content */
+    }
 
+    .career-track h3 {
+        font-size: 1.5rem; /* Adjust font size */
+    }
+
+    .small-icon {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+/* Further adjustments for very small screens */
+@media (max-width: 480px) {
+    .career-track {
+        padding: 10px;
+    }
+
+    .career-track h3 {
+        font-size: 1.25rem; /* Further reduce font size */
+    }
+
+    .small-icon {
+        width: 20px;
+        height: 20px;
+    }
+}
 .container3 {
     max-width: 1200px;
     margin: 50px auto;
@@ -708,14 +787,76 @@ h1 {
     color: #6c3f99;
     margin-bottom: 20px;
 }
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .container3 {
+        padding: 15px;
+        margin: 40px auto;
+    }
+}
 
+@media (max-width: 768px) {
+    .container3 {
+        padding: 10px;
+        margin: 30px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .container3 {
+        padding: 5px;
+        margin: 20px auto;
+        box-shadow: none; /* Remove shadow for very small screens to make it cleaner */
+    }
+}
+
+/* Responsive design for h1 */
+h1 {
+    color: #6c3f99;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+}
 .card-container {
     display: flex;
     justify-content: space-around;
     gap: 20px;
     flex-wrap: wrap; /* Allows wrapping for small screens */
 }
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .card-container {
+        justify-content: space-between; /* Adjust alignment for medium screens */
+        gap: 15px; /* Reduce the gap for medium screens */
+    }
+}
 
+@media (max-width: 768px) {
+    .card-container {
+        justify-content: center; /* Center cards on smaller screens */
+        gap: 10px; /* Further reduce the gap for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .card-container {
+        flex-direction: column; /* Stack cards vertically on very small screens */
+        align-items: center; /* Center-align the cards */
+        gap: 15px; /* Increase gap slightly for vertical stacking */
+    }
+}
 .card {
     background-color: #ffffff;
     border-radius: 10px;
@@ -740,8 +881,65 @@ h1 {
 }
 
 .manual {
+    height: 10%;
+    width: 20px;
+}
+
+.testing {
+    padding-top: 20px;
+    font-size: 40px;
+}
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .card {
+        width: calc(33.33% - 20px); /* Adjust width for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 10px); /* Adjust width for small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%; /* Full width for very small screens */
+    }
+}
+
+.card h2 {
+    color: #333;
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .card h2 {
+        font-size: 1.25rem; /* Adjust font size for small screens */
+    }
+}
+
+.card p {
+    color: #555;
+    margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .card p {
+        font-size: 0.9rem; /* Adjust font size for small screens */
+    }
+}
+
+.manual {
     height: 30%;
     width: 100px;
+}
+
+@media (max-width: 768px) {
+    .manual {
+        width: 100px; /* Adjust width for smaller screens */
+    }
 }
 
 .testing {
@@ -749,6 +947,17 @@ h1 {
     font-size: 40px;
 }
 
+@media (max-width: 768px) {
+    .testing {
+        font-size: 30px; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .testing {
+        font-size: 24px; /* Further adjust font size for very small screens */
+    }
+}
 .enroll, .enroll2 {
     position: absolute;
     top: -45px;
@@ -791,6 +1000,58 @@ h1 {
 .enroll img:first-child, .enroll2 img:first-child {
     margin-left: 0;
 }
+/* Responsive design */
+@media (max-width: 1200px) {
+    .enroll, .enroll2 {
+        top: -35px;
+        left: 120px;
+        padding: 4px 8px;
+    }
+
+    .enroll img, .enroll2 img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media (max-width: 992px) {
+    .enroll, .enroll2 {
+        top: -30px;
+        left: 100px;
+        padding: 3px 6px;
+    }
+
+    .enroll img, .enroll2 img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .enroll, .enroll2 {
+        position: relative;
+        top: 0;
+        left: 0;
+        padding: 2px 4px;
+        margin-bottom: 10px;
+    }
+
+    .enroll img, .enroll2 img {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    .enroll, .enroll2 {
+        padding: 1px 3px;
+    }
+
+    .enroll img, .enroll2 img {
+        width: 16px;
+        height: 16px;
+    }
+}
 
 .badges {
     position: absolute;
@@ -829,7 +1090,34 @@ h1 {
 .badges .discount:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
+/* Responsive design */
+@media (max-width: 1200px) {
+    .badges span {
+        padding: 4px 8px;
+        font-size: 0.75em;
+    }
+}
 
+@media (max-width: 992px) {
+    .badges span {
+        padding: 3px 6px;
+        font-size: 0.7em;
+    }
+}
+
+@media (max-width: 768px) {
+    .badges span {
+        padding: 2px 5px;
+        font-size: 0.65em;
+    }
+}
+
+@media (max-width: 576px) {
+    .badges span {
+        padding: 2px 4px;
+        font-size: 0.6em;
+    }
+}
 .designed-by {
     position: absolute;
     top: 60px;
@@ -846,11 +1134,46 @@ h1 {
 .designed-by:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+/* Responsive design */
+@media (max-width: 1200px) {
+    .designed-by {
+        top: 50px;
+        right: 8px;
+        padding: 4px 8px;
+        font-size: 0.85rem;
+    }
+}
 
+@media (max-width: 992px) {
+    .designed-by {
+        top: 45px;
+        right: 6px;
+        padding: 3px 7px;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .designed-by {
+        position: relative;
+        top: 0;
+        right: 0;
+        padding: 5px;
+        margin-bottom: 10px;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .designed-by {
+        padding: 3px 6px;
+        font-size: 0.75rem;
+    }
+}
 .brand-logos {
     display: flex;
     flex-wrap: wrap; /* Allows wrapping for small screens */
-    gap: 20px; /* Space between logos */
+    gap: 0px; /* Space between logos */
     justify-content: center; /* Center logos */
 }
 
@@ -881,7 +1204,54 @@ h1 {
     height: 20px;
     border-radius: 100%;
 }
+/* Responsive design */
+@media (max-width: 1200px) {
+    .brand-logos .logo-container {
+        width: 45px;
+        height: 45px;
+    }
 
+    .brand-logos img {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+@media (max-width: 992px) {
+    .brand-logos .logo-container {
+        width: 40px;
+        height: 40px;
+    }
+
+    .brand-logos img {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .brand-logos .logo-container {
+        width: 35px;
+        height: 35px;
+    }
+
+    .brand-logos img {
+        width: 14px;
+        height: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .brand-logos .logo-container {
+        width: 30px;
+        height: 30px;
+    }
+
+    .brand-logos img {
+        width: 12px;
+        height: 12px;
+    }
+}
 .details, .details2 {
     display: flex;
     justify-content: space-between;
@@ -895,10 +1265,39 @@ h1 {
     margin: 5px 0;
 }
 
-.details2 p {
+.details p, .details2 p {
     color: #052bb5 !important;
 }
+/* Responsive design */
+@media (max-width: 1200px) {
+    .details p, .details2 p {
+        font-size: 0.85rem;
+    }
+}
 
+@media (max-width: 992px) {
+    .details p, .details2 p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .details p, .details2 p {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .details, .details2 {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: flex-start;
+    }
+
+    .details p, .details2 p {
+        font-size: 0.7rem;
+        margin: 3px 0;
+    }
+}
 .buttons {
     display: flex;
     justify-content: space-between;
@@ -934,80 +1333,62 @@ h1 {
     font-size: 40px;
 }
 
-/* Responsive Design */
+
+/* Responsive design */
 @media (max-width: 1200px) {
-    .card-container {
-        flex-direction: column;
-        align-items: center;
+    .buttons {
+        justify-content: center;
+        gap: 15px;
     }
 
-    .card {
-        width: 90%;
+    .buttons button {
+        font-size: 0.95rem;
+    }
+
+    .automation {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 992px) {
+    .buttons button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    .automation {
+        font-size: 30px;
     }
 }
 
 @media (max-width: 768px) {
-    .career-track {
-        height: auto;
-        padding: 15px;
-    }
-
-    .card-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .enroll, .enroll2 {
-        top: -35px;
-        left: 10px;
-        font-size: 0.9rem;
-    }
-
-    .badges {
-        top: 10px;
-        right: 5px;
-        flex-direction: column;
-    }
-
-    .details, .details2 {
-        flex-direction: column;
-        text-align: center;
-    }
-
     .buttons {
         flex-direction: column;
-    }
-
-    .brand-logos {
-        flex-direction: column;
+        align-items: center;
         gap: 10px;
     }
-}
 
-@media (max-width: 480px) {
-    .enroll, .enroll2 {
-        top: -25px; /* Further adjust positioning for very small screens */
-        left: 5px;
-        font-size: 0.8rem; /* Further reduce font size */
+    .buttons button {
+        width: 100%;
+        font-size: 0.85rem;
+        padding: 10px;
     }
 
-    .badges {
-        top: 5px; /* Further adjust positioning for very small screens */
-        right: 2px;
-        flex-direction: column;
-        gap: 5px; /* Reduce gap between badges */
-    }
-
-    .brand-logos {
-        gap: 5px; /* Further reduce space between logos */
+    .automation {
+        font-size: 25px;
     }
 }
 
+@media (max-width: 576px) {
+    .buttons button {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+
+    .automation {
+        font-size: 20px;
+    }
+}
 .container4{
     max-width: 1200px;
     margin: 50px auto;
@@ -1025,6 +1406,42 @@ h1 {
     margin-bottom: 20px;
 }
 
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .container4 {
+        max-width: 900px;
+        padding: 15px;
+        padding-top: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container4 {
+        max-width: 700px;
+        margin: 30px auto;
+        padding: 15px;
+        padding-top: 80px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container4 {
+        max-width: 100%;
+        margin: 20px auto;
+        padding: 10px;
+        padding-top: 60px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+}
 .card-container {
     display: flex;
     justify-content: space-around;
@@ -1055,7 +1472,49 @@ h1 {
     color: #555;
     margin: 10px 0;
 }
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .card {
+        width: 100%; /* Cards take full width */
+        margin-bottom: 20px; /* Adds space between stacked cards */
+    }
 
+    .card-container {
+        justify-content: space-between; /* Adjust spacing */
+    }
+}
+
+@media (max-width: 768px) {
+    .card img {
+        max-width: 25%; /* Adjust image size */
+    }
+
+    .card h2 {
+        font-size: 1.3rem; /* Adjust font size */
+    }
+
+    .card p {
+        font-size: 0.9rem; /* Adjust paragraph size */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+
+    .card img {
+        max-width: 30%; /* Further adjust image size */
+    }
+
+    .card h2 {
+        font-size: 1.2rem; /* Further adjust font size */
+    }
+
+    .card p {
+        font-size: 0.8rem; /* Further adjust paragraph size */
+    }
+}
 
 .details p {
     font-size: 0.9rem;
@@ -1086,4 +1545,365 @@ button.learn-more {
     color: #fff;
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    .details p {
+        font-size: 0.85rem; /* Adjust font size */
+    }
 
+    .buttons {
+        justify-content: center; /* Center buttons */
+        gap: 10px; /* Add space between wrapped buttons */
+    }
+
+    button {
+        padding: 8px 16px; /* Reduce padding */
+        width: 100%; /* Buttons take full width */
+    }
+
+    button.brochure,
+    button.learn-more {
+        font-size: 0.9rem; /* Adjust button text size */
+    }
+}
+
+@media (max-width: 480px) {
+    .details p {
+        font-size: 0.8rem; /* Further adjust font size */
+    }
+
+    button {
+        padding: 6px 12px; /* Further reduce padding */
+        font-size: 0.85rem; /* Further adjust button text size */
+    }
+}
+
+
+.program-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:white;
+    
+}
+
+.program-title {
+    color: #f5b223;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.program-heading {
+    font-size: 1.5rem;
+    color: #231456;
+}
+
+.emoji {
+    font-size: 1.5rem;
+}
+
+.program-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .program-title {
+        font-size: 1.25rem;
+        text-align: center;
+    }
+    
+    .program-heading {
+        font-size: 1.25rem;
+        text-align: center;
+    }
+    
+    .emoji {
+        font-size: 1.25rem;
+        text-align: center;
+    }
+
+    .program-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .program-title {
+        font-size: 1rem;
+    }
+    
+    .program-heading {
+        font-size: 1rem;
+    }
+    
+    .emoji {
+        font-size: 1rem;
+    }
+
+    .program-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .program-container {
+        padding: 10px;
+    }
+}
+
+.left-panel{
+    background-color: #f3f1f1;
+    border-radius: 15px;
+    
+}
+
+
+
+.panel-item-container {
+    margin-bottom: 30px; /* Space between each container */
+    display: flex; /* Change to flex to align items horizontally */
+    align-items: center; /* Vertically center align items */
+    border: 1px solid #f4f1f1; /* Border for the container */
+    border-radius: 10px; /* Rounded corners for the border */
+    padding: 15px; /* Space inside the border */
+    transition: box-shadow 0.5s ease; /* Smooth transition for shadow effect */
+    background-color: white;
+    height: 150px;
+    position: relative; /* To position the colored strip */
+}
+
+
+
+.panel-item {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    color: #666666;
+    padding-top: 20px;
+    flex: 1; /* Allow the panel item to take the remaining space */
+}
+
+.panel-item.active {
+    font-weight: bold;
+    color: #231456;
+    border-left: 15px solid blue; /* Increases the width of the blue left border */
+    height: 150px;
+    border-radius: 5px;
+    
+}
+
+.icon {
+    font-size: 2rem;
+    margin-right: 10px;
+    color: #f5b223;
+}
+
+/* Shadow effect on hover for the container */
+.panel-item-container:hover {
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3); /* Shadow effect on hover */
+}
+
+.program-content img {
+    width: 24px;  /* Set the desired width */
+    height: 24px; /* Set the desired height */
+    vertical-align: middle; /* Align the image with the text */
+    margin-right: 8px; /* Space between the image and text */
+}
+
+
+.right-panel {
+    width: 75%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.right-panel h2 {
+    color:black;
+    margin-bottom: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 35px;
+
+}
+
+.right-panel > ul {
+    list-style: none;
+    padding: 0;
+    color: #333333;
+}
+
+.right-panel > ul > li {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    position: relative;
+    padding-left: 25px; /* Add some padding to the left for the icon */
+    line-height: 2.0; 
+}
+
+.right-panel > ul > li::before {
+    content: '\003E'; /* Unicode for the '>' symbol */
+    color: #007BFF; /* Icon color */
+    font-size: 1.2rem; /* Icon size */
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateY(2px); /* Adjust the vertical alignment */
+}
+
+.image-container {
+    text-align: right;
+    .right-panel {
+        width: 65%;
+        background-color: #ffffff;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .right-panel h2 {
+        color:black;
+        margin-bottom: 20px;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 35px;
+    
+    }
+    
+    .right-panel > ul {
+        list-style: none;
+        padding: 0;
+        color: #333333;
+    }
+    
+    .right-panel > ul > li {
+        margin-bottom: 15px;
+        font-size: 1rem;
+        position: relative;
+        padding-left: 25px; /* Add some padding to the left for the icon */
+        line-height: 2.0; 
+    }
+    
+    .right-panel > ul > li::before {
+        content: '\003E'; /* Unicode for the '>' symbol */
+        color: #007BFF; /* Icon color */
+        font-size: 1.2rem; /* Icon size */
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translateY(2px); /* Adjust the vertical alignment */
+    }
+    
+    .image-container {
+        text-align: right;
+        margin-top: 0px;
+    }
+    
+    .image-container img {
+        width: 300px; /* Set the width to 300px */
+        height: 250px; /* Set the height to 200px */
+        margin-top: 5px; /* Adjust this value as needed */
+    }
+}
+
+.image-container img {
+    width: 380px; /* Set the width to 300px */
+    height: 300px; /* Set the height to 200px */
+   
+}
+
+.explore-buttons .explore-btn {
+    background-color: #007BFF; /* Button background color */
+    color: white; /* Button text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.explore-buttons .explore-btn:hover {
+    background-color: #0056b3; /* Background color on hover */
+    transform: scale(1.05); /* Slightly increase the size on hover */
+}
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .right-panel {
+        width: 90%;
+        padding: 20px;
+    }
+    
+    .right-panel h2 {
+        font-size: 30px;
+    }
+
+    .image-container img {
+        width: 320px; /* Adjust the width for tablet screens */
+        height: 250px; /* Adjust the height for tablet screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .right-panel {
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .right-panel h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+    
+    .right-panel > ul > li {
+        font-size: 0.9rem;
+        padding-left: 20px;
+    }
+    
+    .right-panel > ul > li::before {
+        font-size: 1rem;
+    }
+
+    .image-container img {
+        width: 280px; /* Adjust the width for small screens */
+        height: 220px; /* Adjust the height for small screens */
+    }
+    
+    .explore-buttons .explore-btn {
+        width: 180px;
+        height: 45px;
+    }
+}
+
+@media (max-width: 480px) {
+    .right-panel {
+        padding: 15px;
+    }
+    
+    .right-panel h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+    
+    .right-panel > ul > li {
+        font-size: 0.8rem;
+        padding-left: 15px;
+    }
+    
+    .right-panel > ul > li::before {
+        font-size: 0.9rem;
+    }
+
+    .image-container img {
+        width: 240px; /* Adjust the width for mobile screens */
+        height: 200px; /* Adjust the height for mobile screens */
+    }
+    
+    .explore-buttons .explore-btn {
+        width: 160px;
+        height: 40px;
+    }
+}
