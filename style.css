@@ -867,6 +867,7 @@ h1 {
     position: relative;
     align-items: flex-start;
     box-sizing: border-box;
+    
 }
 
 .card h2 {
@@ -1005,7 +1006,7 @@ h1 {
     .enroll, .enroll2 {
         top: -35px;
         left: 120px;
-        padding: 4px 8px;
+        padding: 2px 8px; /* Decrease top padding */
     }
 
     .enroll img, .enroll2 img {
@@ -1018,7 +1019,7 @@ h1 {
     .enroll, .enroll2 {
         top: -30px;
         left: 100px;
-        padding: 3px 6px;
+        padding: 1px 6px; /* Decrease top padding */
     }
 
     .enroll img, .enroll2 img {
@@ -1030,10 +1031,12 @@ h1 {
 @media (max-width: 768px) {
     .enroll, .enroll2 {
         position: relative;
-        top: 0;
+        top: -40px;
         left: 0;
-        padding: 2px 4px;
-        margin-bottom: 10px;
+        padding: 1px 4px; /* Decrease top padding */
+        margin: 0 auto 10px auto; /* Center align with auto margins */
+        text-align: center;
+        width: 50%; /* Decrease width */
     }
 
     .enroll img, .enroll2 img {
@@ -1044,7 +1047,7 @@ h1 {
 
 @media (max-width: 576px) {
     .enroll, .enroll2 {
-        padding: 1px 3px;
+        padding: 0px 3px; /* Decrease top padding */
     }
 
     .enroll img, .enroll2 img {
@@ -1160,7 +1163,8 @@ h1 {
         right: 0;
         padding: 5px;
         margin-bottom: 10px;
-        font-size: 0.8rem;
+        font-size: 0.5rem;
+        width: 100px;
     }
 }
 
