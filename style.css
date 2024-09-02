@@ -42,7 +42,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #42029b; /* Dark purple background on hover */
+    background-color:rgb(61, 8, 139); /* Dark purple background on hover */
     color: white; /* Change text color on hover */
 }
 
@@ -97,13 +97,13 @@ nav ul li a:hover {
 .signin {
     background-color: white;
     border: 2px solid #6A1B9A;
-    color: #42029b;
+    color:rgb(61, 8, 139);
 }
 
 .signin:hover {
-    background-color: #42029b; /* Background changes to dark purple */
+    background-color:rgb(61, 8, 139); /* Background changes to dark purple */
     color: white; /* Text color changes to white */
-    border-color: #42029b; /* Border color matches the background */
+    border-color: rgb(61, 8, 139)b; /* Border color matches the background */
 }
 
 .explore {
@@ -147,7 +147,7 @@ nav ul li a:hover {
 
 
 .banner {
-    background-color: #42029b;
+    background-color: rgb(61, 8, 139);
     color: white;
     text-align: center;
     padding: 10px; /* Adjusted for better spacing */
@@ -585,26 +585,26 @@ h1 span {
     }
 }
 
-.container {
+.containers {
     text-align: center; /* Center-aligns text horizontally */
     padding: 20px;
     max-width: 100%; /* Adjust to full width on small screens */
     margin: 0 auto; /* Centers the container horizontally */
 }
 
-.container h1 {
+.containers h1 {
     font-size: 1.2em; /* Adjust size as needed */
     color: rgb(247, 143, 7); /* Dark color for better contrast */
     margin-bottom: 10px;
 }
 
-.container h2 {
+.containers h2 {
     font-size: 1.8em; /* Adjust size as needed */
     color: black; /* Slightly lighter color */
     margin-bottom: 20px;
 }
 
-.container p {
+.containers p {
     font-size: 1.2em; /* Adjust size as needed */
     color: #444343; /* Medium color for readability */
     line-height: 1.5; /* Improves readability with line spacing */
@@ -728,7 +728,7 @@ h1 span {
 .career-track {
     text-align: left;
     padding: 20px;
-    background-color: #6f42c1;
+    background-color:rgb(61, 8, 139);
     color: #fff;
     height: 400px;
 }
@@ -784,7 +784,7 @@ h1 span {
 }
 
 h1 {
-    color: #6c3f99;
+    color:rgb(61, 8, 139);
     margin-bottom: 20px;
 }
 /* Responsive Design */
@@ -812,7 +812,7 @@ h1 {
 
 /* Responsive design for h1 */
 h1 {
-    color: #6c3f99;
+    color: rgb(61, 8, 139);
     margin-bottom: 20px;
     font-size: 2.5rem;
 }
@@ -1260,7 +1260,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
-    color: #0730c7 !important;
+    color: rgb(61, 8, 139) !important;
     flex-wrap: wrap; /* Allows wrapping for small screens */
 }
 
@@ -1270,7 +1270,7 @@ h1 {
 }
 
 .details p, .details2 p {
-    color: #052bb5 !important;
+    color:rgb(61, 8, 139) !important;
 }
 /* Responsive design */
 @media (max-width: 1200px) {
@@ -1324,7 +1324,7 @@ h1 {
 }
 
 .buttons .learn-more {
-    background-color: #0056b3;
+    background-color: rgb(61, 8, 139);
     color: white;
 }
 
@@ -1406,7 +1406,7 @@ h1 {
 }
 
 h1 {
-    color: #6c3f99;
+    color:rgb(61, 8, 139);
     margin-bottom: 20px;
 }
 
@@ -1522,7 +1522,7 @@ h1 {
 
 .details p {
     font-size: 0.9rem;
-    color: #6c3f99;
+    color:rgb(61, 8, 139);
     margin: 5px 0;
 }
 
@@ -1545,7 +1545,7 @@ button.brochure {
 }
 
 button.learn-more {
-    background-color: #6c3f99;
+    background-color: rgb(61, 8, 139);
     color: #fff;
 }
 
@@ -1600,7 +1600,7 @@ button.learn-more {
 
 .program-heading {
     font-size: 1.5rem;
-    color: #231456;
+    color:rgb(61, 8, 139);
 }
 
 .emoji {
@@ -1692,7 +1692,7 @@ button.learn-more {
 
 .panel-item.active {
     font-weight: bold;
-    color: #231456;
+    color:rgb(61, 8, 139);
     border-left: 15px solid blue; /* Increases the width of the blue left border */
     height: 150px;
     border-radius: 5px;
@@ -1750,7 +1750,7 @@ button.learn-more {
 
 .right-panel > ul > li::before {
     content: '\003E'; /* Unicode for the '>' symbol */
-    color: #007BFF; /* Icon color */
+    color: rgb(61, 8, 139); /* Icon color */
     font-size: 1.2rem; /* Icon size */
     position: absolute;
     left: 0;
@@ -1792,7 +1792,7 @@ button.learn-more {
     
     .right-panel > ul > li::before {
         content: '\003E'; /* Unicode for the '>' symbol */
-        color: #007BFF; /* Icon color */
+        color: rgb(61, 8, 139); /* Icon color */
         font-size: 1.2rem; /* Icon size */
         position: absolute;
         left: 0;
@@ -1819,7 +1819,7 @@ button.learn-more {
 }
 
 .explore-buttons .explore-btn {
-    background-color: #007BFF; /* Button background color */
+    background-color: rgb(61, 8, 139); /* Button background color */
     color: white; /* Button text color */
     padding: 10px 20px;
     border: none;
@@ -1831,7 +1831,7 @@ button.learn-more {
 }
 
 .explore-buttons .explore-btn:hover {
-    background-color: #0056b3; /* Background color on hover */
+    background-color:rgb(61, 8, 139); /* Background color on hover */
     transform: scale(1.05); /* Slightly increase the size on hover */
 }
 /* Responsive Design */
@@ -1909,5 +1909,1090 @@ button.learn-more {
     .explore-buttons .explore-btn {
         width: 160px;
         height: 40px;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+/* For screens smaller than 768px (tablets and small desktops) */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+    }
+}
+
+/* For screens smaller than 480px (mobile devices) */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 10px; /* Add padding on the left and right for better spacing */
+    }
+
+    .container > * {
+        width: 100%; /* Ensure children take full width of the container */
+        margin-bottom: 20px; /* Add spacing between items */
+    }
+
+    .container > *:last-child {
+        margin-bottom: 0; /* Remove bottom margin from the last child */
+    }
+}
+
+.left {
+    display: flex; /* Add this to use flexbox */
+    flex-direction: column; /* Stack children vertically */
+    align-items: flex-start; /* Align items to the start (left) */
+    padding-left: 20px;
+    padding-top: 40px;
+}
+
+.left h1 {
+    font-size: 1.2em;
+    color: rgb(255, 186, 0);
+    margin: 0; /* Remove default margin if necessary */
+}
+
+.left .tagline {
+    font-size: 2em;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.left p {
+    color: #828181;
+    padding-top: 5px;
+}
+.left {
+    display: flex; /* Add this to use flexbox */
+    flex-direction: column; /* Stack children vertically */
+    align-items: flex-start; /* Align items to the start (left) */
+    padding-left: 20px;
+    padding-top: 40px;
+}
+
+/* For screens smaller than 768px (tablets and small desktops) */
+@media (max-width: 768px) {
+    .left {
+        padding-left: 10px; /* Reduce left padding on smaller screens */
+        padding-top: 20px; /* Reduce top padding on smaller screens */
+        align-items: center; /* Center items horizontally on smaller screens */
+        text-align: center; /* Center text */
+    }
+
+    .left h1 {
+        font-size: 1.5em; /* Increase font size for better readability on smaller screens */
+    }
+
+    .left .tagline {
+        font-size: 1.5em; /* Adjust font size for smaller screens */
+    }
+
+    .left p {
+        font-size: 0.9em; /* Adjust font size for smaller screens */
+        padding-top: 10px; /* Add more space above the paragraph */
+    }
+}
+
+/* For screens smaller than 480px (mobile devices) */
+@media (max-width: 480px) {
+    .left {
+        padding-left: 5px; /* Further reduce left padding */
+        padding-top: 15px; /* Further reduce top padding */
+    }
+
+    .left h1 {
+        font-size: 1.2em; /* Further reduce font size on very small screens */
+    }
+
+    .left .tagline {
+        font-size: 1.2em; /* Further reduce font size on very small screens */
+    }
+
+    .left p {
+        font-size: 0.8em; /* Further reduce font size on very small screens */
+        padding-top: 8px; /* Adjust space above the paragraph */
+    }
+}
+
+.stats4 {
+    display: flex;
+    justify-content: flex-start; /* Align items to the start (left) */
+    margin-top: 80px;
+}
+
+.stat-item4 {
+    display: flex; /* Allows alignment of image and text */
+    align-items: center; /* Vertically centers content */
+    justify-content: center; /* Horizontally centers content */
+    margin-right: 50px;
+    width: 200px; /* Adjust this value as needed */
+    height: 90px; /* Adjust this value as needed */
+    text-align: center;
+    border: 1px solid #b2b0b0; /* Adds a 1px solid border */
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+    padding: 0 10px; /* Adds horizontal padding */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.stat-item4:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Darker and larger shadow on hover */
+    transform: scale(1.05); /* Slightly scales up the element on hover */
+    border-color: #a1a1a1; /* Changes border color on hover */
+}
+
+.stat-item4 img {
+    width: 30px; /* Adjust this value as needed */
+    height: 30px; /* Adjust this value as needed */
+    margin-right: 10px; /* Space between image and text */
+}
+
+.stat-item4:last-child {
+    margin-right: 0;
+}
+
+.left .experts {
+    padding-top: 40px;
+}
+
+/* For screens smaller than 768px (tablets and small desktops) */
+@media (max-width: 768px) {
+    .stats4 {
+        justify-content: center; /* Center items on smaller screens */
+    }
+
+    .stat-item4 {
+        margin-right: 20px; /* Reduce margin between items */
+        width: 150px; /* Reduce width */
+        height: 70px; /* Reduce height */
+        font-size: 0.9em; /* Adjust font size */
+        padding: 0 8px; /* Adjust horizontal padding */
+    }
+
+    .stat-item4 img {
+        width: 25px; /* Reduce image size */
+        height: 25px; /* Reduce image size */
+    }
+}
+
+/* For screens smaller than 480px (mobile devices) */
+@media (max-width: 480px) {
+    .stats4 {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .stat-item4 {
+        margin-right: 0; /* Remove margin on the right */
+        margin-bottom: 10px; /* Add bottom margin for spacing */
+        width: 100%; /* Full width for each stat item */
+        max-width: 350px; /* Maximum width for better fit */
+        height: 60px; /* Allow height to adjust automatically */
+    }
+
+    .stat-item4:last-child {
+        margin-bottom: 0; /* Remove bottom margin from the last item */
+    }
+
+    .stat-item4 img {
+        width: 20px; /* Further reduce image size */
+        height: 20px; /* Further reduce image size */
+    }
+}
+
+.right {
+    flex: 1; /* Takes up part of the container */
+    display: flex;
+    align-items: center; /* Centers the image vertically within the right section */
+    justify-content: flex-start; /* Aligns the image to the left within the right section */
+}
+
+.right-image {
+    max-width: 100%; /* Ensures the image does not overflow */
+    height: auto; /* Maintains aspect ratio */
+}
+
+/* For screens smaller than 768px (tablets and small desktops) */
+@media (max-width: 768px) {
+    .right {
+        justify-content: center; /* Center image horizontally */
+        padding: 0 10px; /* Adjust padding on smaller screens */
+    }
+}
+
+/* For screens smaller than 480px (mobile devices) */
+@media (max-width: 480px) {
+    .right {
+        padding: 0; /* Remove padding on very small screens */
+        justify-content: center; /* Center image horizontally */
+    }
+
+    .right-image {
+        max-width: 90%; /* Limit image width to ensure it fits well on mobile screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+.button4 {
+    background-color: rgb(61, 8, 139);
+    color: white;
+    border: none;
+    padding: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    padding-top: 20px;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.button4:hover {
+    background-color: rgb(45, 2, 95); /* Lighter shade on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds a shadow effect on hover */
+    transform: translateY(-3px); /* Moves the button up slightly */
+}
+
+
+/* For screens smaller than 768px (tablets and small desktops) */
+@media (max-width: 768px) {
+    .button4 {
+        padding: 15px 30px; /* Reduce padding */
+        font-size: 0.9em; /* Adjust font size */
+    }
+}
+
+/* For screens smaller than 480px (mobile devices) */
+@media (max-width: 480px) {
+    .button4 {
+        padding: 12px 20px; /* Further reduce padding */
+        font-size: 0.8em; /* Further adjust font size */
+        margin-top: 15px; /* Adjust margin for better spacing on small screens */
+    }
+}
+
+
+  
+.banner1 {
+    background-color: rgb(61, 8, 139);
+    padding: 20px 40px; /* 20px top and bottom, 40px left and right */
+    margin: 100px 40px 30px 40px; /* top right bottom left */
+    color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between; /* Aligns content to the left and buttons to the right */
+    align-items: center; /* Vertically centers the content and buttons */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+/* For tablets and small desktops */
+@media (max-width: 1024px) {
+    .banner1 {
+        flex-direction: column; /* Stacks items vertically */
+        text-align: center; /* Centers text */
+        margin: 60px 20px 20px 20px; /* Adjust margins */
+        padding: 20px 20px; /* Adjust padding */
+    }
+
+    .banner1-content {
+        justify-content: center; /* Center content on smaller screens */
+        margin-bottom: 20px; /* Add spacing below content */
+    }
+
+    .banner1-text {
+        font-size: 1.2em; /* Adjust font size for tablets */
+    }
+
+    .banner1-buttons {
+        justify-content: center; /* Center buttons on smaller screens */
+    }
+
+    .banner1-buttons button {
+        margin-left: 0; /* Remove left margin */
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    .banner1 {
+        margin: 30px 10px 10px 10px; /* Further adjust margins */
+        padding: 15px 10px; /* Further adjust padding */
+    }
+
+    .banner1-text {
+        font-size: 1.1em; /* Adjust font size for mobile devices */
+    }
+
+    .banner1-image {
+        width: 30px; /* Adjust the width for smaller screens */
+        height: 30px; /* Maintain aspect ratio */
+        margin-right: 10px; /* Adjust spacing */
+    }
+
+    .banner1-buttons button {
+        width: 100%; /* Make buttons full width on mobile */
+        margin-left: 0; /* Remove left margin */
+        margin-top: 10px; /* Keep top margin for spacing */
+    }
+}
+
+.banner1-content {
+    display: flex;
+    align-items: center; /* Vertically centers the image and text */
+}
+
+.banner1-image {
+    width: 40px; /* Adjust the width as needed */
+    height: 40px; /* Maintain aspect ratio */
+    margin-right: 15px; /* Space between image and text */
+}
+
+.banner1-text {
+    margin: 0;
+    font-size: 1.3em;
+}
+
+.banner1-buttons {
+    display: flex; /* Aligns buttons horizontally */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.banner1-buttons button {
+    padding: 10px;
+    margin-left: 10px;
+    background-color: transparent;
+    border: 1px solid rgb(155, 152, 152);
+    color: white; /* Default text color */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover effects for all buttons */
+.banner1-buttons button:hover {
+    background-color: white; /* Changes background color on hover */
+    color: rgb(61, 8, 139); /* Changes text color on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Adds shadow effect on hover */
+    transform: translateY(-4px); /* Moves the button up by 4 pixels */
+}
+
+/* Styles for filled buttons */
+.banner1-buttons .filled {
+    background-color: #9575CD;
+    border: none;
+}
+
+.banner1-buttons .filled:hover {
+    background-color: #6D4C92; /* Darker shade of the filled button color on hover */
+    border: none; /* Keeps border hidden */
+}
+
+/* Styles for masterclass button */
+.banner1-buttons .masterclass-btn {
+    color: rgb(61, 8, 139);
+    background-color: white;
+    border: 1px solid rgb(61, 8, 139); /* Border matching the button text color */
+}
+
+.banner1-buttons .masterclass-btn:hover {
+    background-color: rgb(61, 8, 139); /* Changes background color on hover */
+    color: white; /* Changes text color on hover */
+    border: 1px solid rgb(61, 8, 139); /* Keeps border color consistent on hover */
+}
+
+.banner2 {
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+    background: repeating-radial-gradient(circle, transparent, transparent 6.3px, #fff 0, #fff 8.1px), repeating-radial-gradient(circle, transparent, transparent 6.3px, #fff7d3 0, #fff7d3 8.1px), #fff;
+    background-color: #fff;
+    background-position: 0 0, 18px 18px, 36px 18px;
+    background-size: 36px 36px;
+    padding: 3rem 0;
+  }
+  @media (max-width: 1200px) {
+    .banner2 {
+      margin-top: 4rem;
+      margin-bottom: 3rem;
+      padding: 2rem 0;
+      background-size: 30px 30px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .banner2 {
+      margin-top: 3rem;
+      margin-bottom: 2rem;
+      padding: 1.5rem 0;
+      background-size: 24px 24px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .banner2 {
+      margin-top: 2rem;
+      margin-bottom: 1.5rem;
+      padding: 1rem 0;
+      background-size: 20px 20px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .banner2 {
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
+      padding: 0.5rem 0;
+      background-size: 16px 16px;
+    }
+  }
+  
+  
+  
+  .banner2 h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .banner2 p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  @media (max-width: 1200px) {
+    .banner2 h1 {
+      font-size: 32px;
+      margin-bottom: 18px;
+    }
+  
+    .banner2 p {
+      font-size: 16px;
+      margin-bottom: 24px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .banner2 h1 {
+      font-size: 28px;
+      margin-bottom: 16px;
+      padding-left: 20px;
+    }
+  
+    .banner2 p {
+      font-size: 14px;
+      margin-bottom: 20px;
+      padding-left: 15px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .banner2 h1 {
+      font-size: 24px;
+      margin-bottom: 14px;
+    }
+  
+    .banner2 p {
+      font-size: 12px;
+      margin-bottom: 18px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .banner2 h1 {
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
+  
+    .banner2 p {
+      font-size: 10px;
+      margin-bottom: 15px;
+    }
+  }
+ 
+  .logos2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .logos2 img {
+    margin: 10px;
+    max-height: 50px;
+    transition: filter 0.4s ease; /* Smooth transition for color effect */
+  }
+  
+  .logos2 img:hover {
+    filter: brightness(0.5); /* Darken the image on hover */
+  }
+  
+  .logos2 span {
+    font-size: 18px;
+    margin-left: 10px;
+    transition: color 0.3s ease; /* Smooth transition for text color */
+  }
+  
+  .logos2 span:hover {
+    color: #333; /* Darker color on hover */
+  }
+  @media (max-width: 1200px) {
+    .logos2 img {
+      max-height: 40px;
+      margin: 8px;
+    }
+  
+    .logos2 span {
+      font-size: 16px;
+      margin-left: 8px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .logos2 img {
+      max-height: 35px;
+      margin: 6px;
+    }
+  
+    .logos2 span {
+      font-size: 14px;
+      margin-left: 6px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .logos2 img {
+      max-height: 30px;
+      margin: 5px;
+    }
+  
+    .logos2 span {
+      font-size: 12px;
+      margin-left: 4px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .logos2 img {
+      max-height: 25px;
+      margin: 4px;
+    }
+  
+    .logos2 span {
+      font-size: 10px;
+      margin-left: 2px;
+    }
+  }
+  
+.teachers {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    padding-top: 5px;
+    line-height: 1;
+    
+    
+}
+.teachers h1{
+    color:#fd9610;
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.teachers p{
+    color:rgb(61, 8, 139);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 1rem; /* Add space above the p */
+}
+.teachers .take{
+    color:  var(--text);
+    font-size: 1em;
+    
+}
+/* Responsive design */
+@media (max-width: 1200px) {
+    .teachers h1 {
+        font-size: 1.3em;
+    }
+
+    .teachers p {
+        font-size: 1.8rem;
+    }
+
+    .teachers .take {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 992px) {
+    .teachers h1 {
+        font-size: 1.2em;
+    }
+
+    .teachers p {
+        font-size: 1.6rem;
+    }
+
+    .teachers .take {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 768px) {
+    .teachers h1 {
+        font-size: 1.1em;
+    }
+
+    .teachers p {
+        font-size: 1.4rem;
+    }
+
+    .teachers .take {
+        font-size: 0.7em;
+    }
+}
+
+@media (max-width: 576px) {
+    .teachers h1 {
+        font-size: 1em;
+    }
+
+    .teachers p {
+        font-size: 1.5rem;
+    }
+
+    .teachers .take {
+        font-size: 0.9em;
+    }
+}
+.teacher-profiles {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px; /* Increased padding */
+    width: 100%; /* Ensure it spans the full width of its container */
+    max-width: 1300px; /* Set a max width for larger screens */
+    height: auto; /* Adjust height based on content */
+    margin: 0 auto; /* Center the container */
+    flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+}
+
+.teacher-profiles .profile {
+    flex: 1 1 200px; /* Flex-grow, flex-shrink, and flex-basis for responsive items */
+    margin: 10px; /* Space between items */
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .teacher-profiles {
+        padding: 15px; /* Adjust padding */
+    }
+}
+
+@media (max-width: 992px) {
+    .teacher-profiles {
+        padding: 10px; /* Further adjust padding */
+    }
+}
+
+@media (max-width: 768px) {
+    .teacher-profiles {
+        padding: 20px; /* Reduce padding */
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .teacher-profiles .profile {
+        flex: 1 1 100%; /* Each profile takes full width */
+        margin: 5px 0; /* Space between stacked items */
+    }
+}
+
+@media (max-width: 576px) {
+    .teacher-profiles {
+        padding: 5px; /* Minimum padding */
+    }
+}
+
+.teacher-profiles .name {
+    padding-top: 5px;
+    color: rgb(61, 8, 139);
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.teacher-profiles p {
+    padding-top: 5px;
+    color: var(--text);
+    font-family: "Metropolis";
+}
+
+.profile {
+    text-align: center;
+    margin: 10px; /* Margin between profiles */
+    flex: 1 1 200px; /* Allow profiles to shrink and grow with a base size */
+}
+
+.profile img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #ccc; /* Placeholder background color */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scaling and shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Initial shadow effect */
+}
+
+.profile img:hover {
+    transform: scale(1.1); /* Increase size by 10% on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Enhanced shadow effect on hover */
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+    .teacher-profiles .name {
+        font-size: 1.4em; /* Adjust font size for medium screens */
+    }
+
+    .teacher-profiles p {
+        font-size: 1.2em; /* Adjust font size for medium screens */
+    }
+
+    .profile img {
+        width: 180px; /* Adjust image size for medium screens */
+        height: 180px;
+    }
+}
+
+@media (max-width: 992px) {
+    .teacher-profiles .name {
+        font-size: 1.2em; /* Further adjust font size for smaller screens */
+    }
+
+    .teacher-profiles p {
+        font-size: 1.1em; /* Further adjust font size for smaller screens */
+    }
+
+    .profile img {
+        width: 160px; /* Adjust image size for smaller screens */
+        height: 160px;
+    }
+}
+
+@media (max-width: 768px) {
+    .teacher-profiles .name {
+        font-size: 2em; /* Smaller font size for mobile screens */
+    }
+
+    .teacher-profiles p {
+        font-size: 1em; /* Smaller font size for mobile screens */
+    }
+
+    .profile img {
+        width: 150px; /* Further adjust image size for mobile screens */
+        height: 150px;
+    }
+}
+
+@media (max-width: 576px) {
+    .teacher-profiles .name {
+        font-size: 0.9em; /* Smallest font size for very small screens */
+    }
+
+    .teacher-profiles p {
+        font-size: 1em; /* Smallest font size for very small screens */
+    }
+
+    .profile img {
+        width: 200px; /* Smallest image size for very small screens */
+        height: 200px;
+    }
+}
+
+
+.teacher-profiles2 {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px; /* Increased padding */
+    width: 100%; /* Ensure it spans the full width of its container */
+    max-width: 1300px; /* Set a max width for larger screens */
+    height: auto; /* Adjust height based on content */
+    margin: 0 auto; /* Center the container */
+    flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+}
+
+.teacher-profiles2 .profile2 {
+    flex: 1 1 200px; /* Flex-grow, flex-shrink, and flex-basis for responsive items */
+    margin: 10px; /* Space between items */
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .teacher-profiles2 {
+        padding: 15px; /* Adjust padding */
+    }
+}
+
+@media (max-width: 992px) {
+    .teacher-profiles2 {
+        padding: 10px; /* Further adjust padding */
+    }
+}
+
+@media (max-width: 768px) {
+    .teacher-profiles2 {
+        padding: 20px; /* Reduce padding */
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .teacher-profiles2 .profile2 {
+        flex: 1 1 100%; /* Each profile takes full width */
+        margin: 5px 0; /* Space between stacked items */
+    }
+}
+
+@media (max-width: 576px) {
+    .teacher-profiles2 {
+        padding: 5px; /* Minimum padding */
+    }
+}
+
+.teacher-profiles2 .name2 {
+    padding-top: 5px;
+    color: rgb(61, 8, 139);
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.teacher-profiles2 p {
+    padding-top: 5px;
+    color: var(--text);
+    font-family: "Metropolis";
+}
+
+.profile2 {
+    text-align: center;
+    margin: 10px; /* Margin between profiles */
+    flex: 1 1 200px; /* Allow profiles to shrink and grow with a base size */
+}
+
+.profile2 img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #ccc; /* Placeholder background color */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scaling and shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Initial shadow effect */
+}
+
+.profile2 img:hover {
+    transform: scale(1.1); /* Increase size by 10% on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Enhanced shadow effect on hover */
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+    .teacher-profiles2 .name2 {
+        font-size: 1.4em; /* Adjust font size for medium screens */
+    }
+
+    .teacher-profiles2 p {
+        font-size: 1.2em; /* Adjust font size for medium screens */
+    }
+
+    .profile2 img {
+        width: 180px; /* Adjust image size for medium screens */
+        height: 180px;
+    }
+}
+
+@media (max-width: 992px) {
+    .teacher-profiles2 .name2 {
+        font-size: 1.2em; /* Further adjust font size for smaller screens */
+    }
+
+    .teacher-profiles2 p {
+        font-size: 1.1em; /* Further adjust font size for smaller screens */
+    }
+
+    .profile2 img {
+        width: 160px; /* Adjust image size for smaller screens */
+        height: 160px;
+    }
+}
+
+@media (max-width: 768px) {
+    .teacher-profiles2 .name2 {
+        font-size: 2em; /* Smaller font size for mobile screens */
+    }
+
+    .teacher-profiles2 p {
+        font-size: 1em; /* Smaller font size for mobile screens */
+    }
+
+    .profile2 img {
+        width: 150px; /* Further adjust image size for mobile screens */
+        height: 150px;
+    }
+}
+
+@media (max-width: 576px) {
+    .teacher-profiles2 .name {
+        font-size: 0.9em; /* Smallest font size for very small screens */
+    }
+
+    .teacher-profiles2 p {
+        font-size: 1em; /* Smallest font size for very small screens */
+    }
+
+    .profile2 img {
+        width: 200px; /* Smallest image size for very small screens */
+        height: 200px;
+    }
+}
+
+
+.certificate2 {
+    background: radial-gradient(50% 50% at 100% 0, #000 0 5%, #20007a 6% 15%, #000 16% 25%, #20007a 26% 35%, #000 36% 45%, #20007a 46% 55%, #000 56% 65%, #20007a 66% 75%, #000 76% 85%, #20007a 86% 95%, transparent 96%), 
+                radial-gradient(50% 50% at 0 100%, #000 0 5%, #20007a 6% 15%, #000 16% 25%, #20007a 26% 35%, #000 36% 45%, #20007a 46% 55%, #000 56% 65%, #20007a 66% 75%, #000 76% 85%, #20007a 86% 95%, transparent 96%), 
+                radial-gradient(50% 50%, #000 0 5%, #20007a 6% 15%, #000 16% 25%, #20007a 26% 35%, #000 36% 45%, #20007a 46% 55%, #000 56% 65%, #20007a 66% 75%, #000 76% 85%, #20007a 86% 95%, transparent 96%), 
+                radial-gradient(50% 50%, #000 0 5%, #20007a 6% 15%, #000 16% 25%, #20007a 26% 35%, #000 36% 45%, #20007a 46% 55%, #000 56% 65%, #20007a 66% 75%, #000 76% 85%, #20007a 86% 95%, transparent 96%) 24px 24px;
+    background-color: #000;
+    background-size: 48px 48px;
+    padding: 5rem 1rem;
+    position: relative;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .certificate2 {
+        padding: 5rem 2rem;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+}
+
+@media (min-width: 1024px) {
+    .certificate2 {
+        padding: 5rem 4rem;
+    }
+}
+
+.left-side {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .left-side {
+        width: 50%;
+        padding: 1.5rem;
+        align-items: flex-start;
+    }
+}
+
+@media (min-width: 1024px) {
+    .left-side {
+        padding: 2rem;
+    }
+}
+
+.left-side .quality {
+    background-color: #fce7b5;
+    border: 1px solid transparent;
+    border-radius: 6rem;
+    padding: .5rem 1rem .5rem 2rem;
+    margin-top: 1rem;
+    color: #7b431f;
+    gap: .5rem;
+    font-size: .875rem !important;
+    font-weight: 700;
+    max-width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .left-side .quality {
+        font-size: 1rem !important;
+        padding: .75rem 1.5rem .75rem 2.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .left-side .quality {
+        font-size: 1.125rem !important;
+        padding: 1rem 2rem 1rem 3rem;
+    }
+}
+
+.certificate2 h1, .certificate2 p {
+    color: white;
+    margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+    .certificate2 h1 {
+        font-size: 2rem;
+        margin-top: 1.5rem;
+    }
+
+    .certificate2 p {
+        font-size: 1.25rem;
+        margin-top: 1.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .certificate2 h1 {
+        font-size: 2.5rem;
+        margin-top: 2rem;
+    }
+
+    .certificate2 p {
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+}
+
+.right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 1rem;
+}
+
+@media (min-width: 768px) {
+    .right {
+        width: 50%;
+    }
+
+    .right img {
+        max-width: 90%;
+        margin: 0 1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .right img {
+        max-width: 80%;
+        margin: 0 1.5rem;
     }
 }
