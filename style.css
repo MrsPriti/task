@@ -115,7 +115,6 @@ nav ul li a:hover {
     background-color: #6A1B9A; /* Background changes to a lighter purple */
     color: white; /* Text color remains white */
 }
-
 /* Responsive Design for Buttons */
 @media (max-width: 768px) {
     .buttons {
@@ -133,6 +132,7 @@ nav ul li a:hover {
         justify-content: center; /* Center buttons horizontally */
         gap: 10px; /* Ensure consistent spacing between buttons */
         padding-right: 0; /* Remove right padding */
+        width: 100%; /* Ensure the container is full width */
     }
     
     .signin, .explore {
@@ -140,6 +140,7 @@ nav ul li a:hover {
         padding: 12px 20px; /* Adjust padding for better spacing */
         text-align: center; /* Center text inside buttons */
         margin: 5px; /* Add margin to separate the buttons */
+        flex: 1; /* Allow buttons to grow and shrink */
     }
 }
 
@@ -385,7 +386,7 @@ h1 span {
 
 @keyframes slideIn {
     from {
-        top: -730px; /* Start from outside the view */
+        top: 730px; /* Start from outside the view */
     }
     to {
         top: 730px; /* Final position where the box will be placed */
@@ -425,17 +426,18 @@ h1 span {
 
     @keyframes slideIn480 {
         from {
-            top: -1375px; /* Start from above the view */
+            top: 1200px; /* Start from above the view */
         }
         to {
-            top: 1375px; /* Final position where the box will be placed */
+            top: 1200px; /* Final position where the box will be placed */
         }
     }
+}
 
     .companies-section {
         padding: 10px 0;
     }
-}
+
 .companies {
     display: flex;
     justify-content: center;
@@ -2994,5 +2996,928 @@ button.learn-more {
     .right img {
         max-width: 80%;
         margin: 0 1.5rem;
+    }
+}
+
+.testimonials {
+    text-align: center;
+    padding: 50px;
+    background-color: #fff;
+   
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.testimonials h1 {
+    text-transform: uppercase !important;
+    color: #fd9610;
+    font-size: 1.5em;
+}
+
+.testimonials h2 {
+    font-size: 2em;
+    color: var(--text);
+   
+    margin-top: 10px;
+}
+.testimonials p {
+    font-size: 1.2em;
+    color: #777;
+    margin-top: 20px;
+}
+@media (max-width: 768px) {
+    .testimonials {
+        padding: 40px;
+    }
+
+    .testimonials h1 {
+        font-size: 1.3em;
+    }
+
+    .testimonials h2 {
+        font-size: 1.5em;
+    }
+
+    .testimonials p {
+        font-size: 1em;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonials {
+        padding: 20px;
+    }
+
+    .testimonials h1 {
+        font-size: 1.1em;
+    }
+
+    .testimonials h2 {
+        font-size: 1.2em;
+    }
+
+    .testimonials p {
+        font-size: 0.9em;
+        margin-top: 10px;
+    }
+}
+.card-containers {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: white;
+}
+
+.cards {
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 30%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.cards:hover {
+    transform: scale(1.02); /* Slightly increase the size of the card on hover */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Increase shadow on hover for a lifted effect */
+}
+@media (max-width: 768px) {
+    .card-containers {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center; /* Center align cards */
+        padding: 10px;
+    }
+
+    .cards {
+        width: 80%; /* Make cards take up more width */
+        height: auto; /* Allow height to adjust based on content */
+        margin-top: 15px; /* Reduce margin */
+    }
+}
+
+@media (max-width: 480px) {
+    .card-containers {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center; /* Center align cards */
+        padding: 5px;
+    }
+
+    .cards {
+        width: 100%; /* Make cards take full width */
+        height: auto; /* Allow height to adjust based on content */
+        margin-top: 10px; /* Further reduce margin */
+    }
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensure space between avatar, info, and header images */
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-info h2 {
+    font-size: 18px;
+}
+
+.title {
+    color: grey;
+    font-size: 15px;
+}
+
+.cards p {
+    line-height: 2; /* Adjust the line height as needed */
+    color: #777;
+    padding-top: 10px;
+}
+/* Responsive styles */
+@media (max-width: 768px) {
+    .card-header {
+        flex-direction: column; /* Stack avatar and card-info vertically */
+        align-items: flex-start; /* Align items to the start of the container */
+    }
+
+    .avatar {
+        width: 40px; /* Reduce avatar size */
+        height: 40px; /* Reduce avatar size */
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 10px; /* Add bottom margin */
+    }
+
+    .card-info h2 {
+        font-size: 16px; /* Reduce font size */
+    }
+
+    .title {
+        font-size: 13px; /* Reduce font size */
+    }
+    
+    .cards p {
+        font-size: 0.9em; /* Adjust font size */
+        padding-top: 8px; /* Reduce padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .card-header {
+        flex-direction: row; /* Stack avatar and card-info vertically */
+        align-items: flex-start; /* Align items to the start of the container */
+    }
+
+    .avatar {
+        width: 35px; /* Further reduce avatar size */
+        height: 35px; /* Further reduce avatar size */
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 8px; /* Adjust bottom margin */
+    }
+
+    .card-info h2 {
+        font-size: 14px; /* Further reduce font size */
+    }
+
+    .title {
+        font-size: 12px; /* Further reduce font size */
+    }
+    
+    .cards p {
+        font-size: 0.8em; /* Further adjust font size */
+        padding-top: 6px; /* Reduce padding */
+    }
+}
+.stars {
+    display: flex;
+    justify-content: flex-start; /* Align stars to the left */
+    gap: 5px; /* Space between stars */
+    color: gold; /* Set the color of the stars to yellow */
+    padding-top: 10px; /* Add some spacing from the paragraph */
+}
+
+.stars span {
+    font-size: 30px; /* Adjust the size of the stars */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and size change */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+.stars span:hover {
+    color: orange; /* Change the color of the stars on hover */
+    transform: scale(1.2); /* Increase the size of the stars on hover */
+}
+
+.header-images {
+    display: flex;
+    gap: 20px; /* Space between header images */
+    margin-left: 20px; /* Add space between the header images and the card-info section */
+}
+
+.header-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+/* Responsive styles */
+@media (max-width: 768px) {
+    .stars {
+        gap: 4px; /* Reduce space between stars */
+        padding-top: 8px; /* Reduce top padding */
+    }
+
+    .stars span {
+        font-size: 25px; /* Slightly reduce star size */
+    }
+
+    .header-images {
+        gap: 15px; /* Reduce space between images */
+        margin-left: 15px; /* Reduce left margin */
+    }
+
+    .header-image {
+        width: 25px; /* Reduce image size */
+        height: 25px; /* Reduce image size */
+    }
+}
+
+@media (max-width: 480px) {
+    .stars {
+        gap: 3px; /* Further reduce space between stars */
+        padding-top: 5px; /* Further reduce top padding */
+    }
+
+    .stars span {
+        font-size: 20px; /* Further reduce star size */
+    }
+
+    .header-images {
+        gap: 10px; /* Further reduce space between images */
+        margin-left: 10px; /* Further reduce left margin */
+    }
+
+    .header-image {
+        width: 20px; /* Further reduce image size */
+        height: 20px; /* Further reduce image size */
+    }
+}
+
+.contact {
+    text-align: left;
+    background-color:white;
+    padding-left: 20px;
+    
+}
+
+.contact h1 {
+    font-size: 1.5em;
+    font-weight: 800;
+    line-height: 1;
+    color: rgb(255, 186, 0);
+}
+
+.contact p {
+    font-size: 1.6em;
+    color: var(--text);
+    font-weight: 800;
+   
+}
+
+.contact-image {
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Maintain aspect ratio */
+}
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .contact {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .contact h1 {
+        font-size: 1.2em;
+    }
+
+    .contact p {
+        font-size: 1.4em;
+    }
+
+    .contact-image {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .contact h1 {
+        font-size: 1em;
+    }
+
+    .contact p {
+        font-size: 1.2em;
+    }
+
+    .contact-image {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+.containers2 {
+    display: flex; /* Use Flexbox layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space items out horizontally */
+    padding: 20px; /* Optional padding */
+    background-color: white;
+}
+
+.image-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    max-width: 400px; /* Optional maximum width for image container */
+}
+
+.image-left img {
+    max-width: 300px; /* Adjust as needed */
+    width: 100%; /* Responsive width */
+    height: auto; /* Maintain aspect ratio */
+}
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .containers2 {
+        padding: 15px; /* Reduce padding for medium screens */
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .image-left {
+        max-width: 100%; /* Allow image container to take full width */
+        margin-bottom: 20px; /* Add space between items */
+    }
+
+    .image-left img {
+        max-width: 100%; /* Ensure the image scales appropriately */
+    }
+}
+
+@media (max-width: 768px) {
+    .containers2 {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .image-left {
+        max-width: 100%; /* Full width on small screens */
+    }
+
+    .image-left img {
+        max-width: 100%; /* Full width on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .containers2 {
+        padding: 5px; /* Minimal padding for very small screens */
+    }
+
+    .image-left {
+        max-width: 80%; /* Full width on very small screens */
+    }
+
+    .image-left img {
+        max-width: 100%; /* Full width on very small screens */
+    }
+}
+.form-container {
+    flex: 1;
+    padding: 10px; /* Decrease padding */
+    max-width: 800px; /* Adjust the maximum width */
+}
+
+.form-container h2 {
+    margin-top: 2px; /* Adjust top margin as needed */
+    padding-top: 2px; /* Decreased top padding */
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* Arrange form elements in a column */
+}
+
+.form-group {
+    display: flex; /* Use Flexbox to align label and input side by side */
+    justify-content: space-between; /* Space items out horizontally */
+    gap: 10px; /* Space between the two groups */
+}
+
+.form-group-left, .form-group-right {
+    flex: 1; /* Make both form groups take up equal space */
+}
+
+label {
+    margin-top: 10px; /* Space between labels and inputs */
+}
+
+input {
+    margin-top: 5px; /* Space between inputs and labels */
+    padding: 10px; /* Increase padding for better appearance */
+    border: 1px solid #ccc; /* Border around input fields */
+    border-radius: 3px; /* Slightly reduce border-radius */
+    width: 100%; /* Make inputs take up the full width of their container */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    font-size: 14px; /* Adjust font size if necessary */
+    height: 50px; /* Set a consistent height for all input fields */
+}
+
+input.email-input {
+    width: 50%; /* Adjust the width of the email input as needed */
+}
+
+.sub button {
+    margin-top: 10px; /* Space between inputs and button */
+    padding: 8px 12px; /* Decrease padding */
+    background-color: #3d088b; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove default border */
+    border-radius: 3px; /* Slightly reduce border-radius */
+    cursor: pointer; /* Pointer cursor on hover */
+    width: 20%; 
+    height: 40px;
+}
+
+.sub button:hover {
+    background-color: #0056b3; /* Darker button background on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .form-container {
+        padding: 10px; /* Adjust padding for medium screens */
+        max-width: 100%; /* Allow form container to take full width */
+    }
+
+    .form-group {
+        flex-direction: column; /* Stack label and input vertically */
+    }
+
+    .form-group-left, .form-group-right {
+        width: 100%; /* Make form groups take full width */
+        margin-bottom: 15px; /* Add space between stacked groups */
+    }
+
+    .sub button {
+        width: 100%; /* Make button take full width */
+        height: auto; /* Adjust height for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .form-container {
+        padding: 10px; /* Adjust padding for small screens */
+    }
+
+    .form-group {
+        flex-direction: column; /* Stack label and input vertically */
+    }
+
+    .form-group-left, .form-group-right {
+        width: 100%; /* Make form groups take full width */
+        margin-bottom: 15px; /* Add space between stacked groups */
+    }
+
+    input.email-input {
+        width: 100%; /* Full width for email input */
+    }
+
+    .sub button {
+        width: 100%; /* Full width for button */
+        height: auto; /* Adjust height for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .form-container {
+        padding: 5px; /* Minimal padding for very small screens */
+    }
+
+    .form-group {
+        flex-direction: column; /* Stack label and input vertically */
+    }
+
+    .form-group-left, .form-group-right {
+        width: 100%; /* Full width for form groups */
+        margin-bottom: 15px; /* Add space between stacked groups */
+    }
+
+    input.email-input {
+        width: 100%; /* Full width for email input */
+    }
+
+    .sub button {   
+        width: 100%; /* Full width for button */
+        height: auto; /* Adjust height for smaller screens */
+    }
+}
+
+.Question {
+    background-color:#f1f0fe;
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+.Question h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #fdb022;
+}
+
+h2 {
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .Question {
+        padding: 15px;
+    }
+
+    .Question h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .Question {
+        padding: 10px;
+    }
+
+    .Question h1 {
+        font-size: 1.2em;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+}
+.faq-container {
+    width: 95%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.faq-item {
+    background-color: #fff;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+    background-color: white;
+    color: var(--text);
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-answer {
+    display: none;
+    padding: 15px;
+    line-height: 2;
+    text-align: left;
+    color: #6e6e6e;
+    
+}
+
+.dropdown-icon {
+    font-size: 0.7em;
+    transition: transform 0.2s ease;
+}
+
+.faq-question.active .dropdown-icon {
+    transform: rotate(180deg);
+}
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .faq-container {
+        padding: 15px;
+    }
+
+    .faq-question {
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    .faq-answer {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .faq-container {
+        padding: 10px;
+    }
+
+    .faq-question {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+
+    .faq-answer {
+        padding: 8px;
+        font-size: 0.8em;
+    }
+}
+
+.callback-section {
+    background-color: rgba(108, 233, 166, 0.2);
+    padding: 20px; /* Top and bottom padding */
+    padding-left: 50px; /* Left padding */
+    padding-right: 50px; /* Right padding */
+    margin-left: 50px; /* Add left margin */
+    margin-right: 50px; /* Add right margin */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    margin-bottom: 80px;
+}
+
+.questions-text {
+    display: flex;
+    align-items: center;
+}
+
+.questions-text img {
+    margin-right: 10px;
+}
+
+.questions-text div {
+    display: flex;
+    flex-direction: column;
+}
+
+.questions-text h1 {
+    line-height: 1.7;
+    font-weight: 700;
+    color: rgb(10, 164, 52);
+    font-size: 1.6em;
+    margin: 0; /* Remove default margin */
+}
+
+.questions-text p {
+    font-size: 1em;
+    color: rgb(10, 164, 52);
+    margin: 0; /* Remove default margin */
+}
+
+.callback-button {
+    background-color: rgb(72, 196, 121);
+    border: 1px solid rgb(72, 196, 121);
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+}
+
+.callback-button:hover {
+    background-color: rgb(6, 120, 55);
+    border-color: rgb(60, 176, 110);
+    transform: translateY(-5px); /* Move the button up by 5px */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .callback-section {
+        padding: 20px 10px;
+        margin: 20px 10px;
+        flex-direction: column; /* Stack items vertically */
+        text-align: center; /* Center text for better readability */
+    }
+
+    .questions-text {
+        margin-bottom: 20px; /* Add space between text and button */
+    }
+
+    .questions-text img {
+        max-width: 40px; /* Scale down icon further on smaller screens */
+    }
+
+    .questions-text h1 {
+        font-size: 1.4em;
+    }
+
+    .callback-button {
+        padding: 10px 15px; /* Adjust padding for smaller screens */
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .callback-section {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .questions-text img {
+        max-width: 30px; /* Scale down icon further on very small screens */
+    }
+
+    .questions-text h1 {
+        font-size: 1.2em;
+    }
+
+    .callback-button {
+        padding: 8px 12px; /* Adjust padding for very small screens */
+        font-size: 12px; /* Adjust font size for very small screens */
+        width: 50%;
+    }
+}
+
+.footer {
+    background-color: #0c0b34;
+    color: white;
+    padding: 50px 20px; /* Decreased top padding */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    max-width: 300px;
+}
+
+.footer-logo img {
+    width: 60%;
+    margin-bottom: 10px;
+}
+
+.footer-section {
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: #bfbfbf;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    color: #ffffff;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: center; /* Center-aligns the child elements horizontally */
+    align-items: center;
+    padding-top: 10px; /* Adjusted padding */
+    border-top: 1px solid #3a3a3a;
+    margin-top: 10px; /* Adjusted margin */
+    text-align: center; /* Center-aligns the text within child elements */
+}
+.social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px; /* Adjusted line-height to vertically center the text */
+    color: #0c0b34;
+    font-size: 20px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    margin-top: 20px;
+    position: relative;
+}
+
+.social-icons a:hover {
+    background-color: #1e1e1f; /* Change the background color on hover */
+    color: white; /* Change the text color on hover */
+    transform: translateY(-5px); /* Move the icon up on hover */
+}
+
+/* Adding keyframe animation for up and down movement */
+@keyframes hover-move {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Applying the keyframe animation on hover */
+.social-icons a:hover {
+    animation: hover-move 0.6s ease-in-out infinite;
+}
+
+
+.footer-bottom p {
+    margin: 0;
+    color: #bfbfbf;
+    font-size: 14px;
+}
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer-logo, .footer-section {
+        max-width: none;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .footer-section {
+        width: 100%;
+    }
+
+    .footer-section ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .footer-section ul li {
+        margin: 0 10px;
+        margin-bottom: 10px;
+    }
+
+    .social-icons {
+        margin-top: 20px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-logo img {
+        width: 80%;
+    }
+
+    .footer-section ul li {
+        margin: 5px 0;
+    }
+
+    .social-icons a {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
     }
 }
