@@ -252,8 +252,31 @@ nav ul li a:hover {
 .text-content p {
     color: black;
     width: 100%; /* Ensure text content fits within container */
+    white-space: nowrap; /* Prevent text from wrapping to the next line */
+    overflow: hidden; /* Hide any overflow text */
+    text-overflow: ellipsis; /* Add "..." to indicate truncated text */
+}
+/* Responsive adjustments for different screen sizes */
+@media (max-width: 1200px) {
+    .text-content p {
+        font-size: 14px; /* Adjust text size for medium screens */
+    }
 }
 
+@media (max-width: 768px) {
+    .text-content {
+        padding-left: 10px; /* Add some padding for smaller screens */
+    }
+    .text-content p {
+        font-size: 12px; /* Reduce font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .text-content p {
+        font-size: 10px; /* Further reduce font size for mobile screens */
+    }
+}
 .partner {
     color: #4CAF50;
     font-weight: bold;
@@ -277,7 +300,50 @@ nav ul li a:hover {
     top: 50%;
     transform: translateY(-50%);
 }
+/* Responsive adjustments for medium-sized screens */
+@media (max-width: 1200px) {
+    .partner {
+        font-size: 14px; /* Reduce text size for better readability */
+        padding-left: 25px; /* Adjust padding for medium screens */
+    }
 
+    .partner::before {
+        width: 18px;
+        height: 18px;
+        line-height: 18px;
+        font-size: 12px; /* Adjust checkmark size */
+    }
+}
+
+/* Responsive adjustments for tablet screens */
+@media (max-width: 768px) {
+    .partner {
+        font-size: 12px; /* Reduce text size for smaller screens */
+        padding-left: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .partner::before {
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        font-size: 10px; /* Adjust checkmark size for tablet screens */
+    }
+}
+
+/* Responsive adjustments for mobile screens */
+@media (max-width: 480px) {
+    .partner {
+        font-size: 10px; /* Further reduce text size for mobile */
+        padding-left: 15px; /* Adjust padding for mobile screens */
+    }
+
+    .partner::before {
+        width: 14px;
+        height: 14px;
+        line-height: 14px;
+        font-size: 8px; /* Adjust checkmark size for mobile */
+    }
+}
 h1 {
     color: black;
     margin: 20px 0;
@@ -287,7 +353,29 @@ h1 {
 h1 span {
     color: #FF9800;
 }
+/* Responsive adjustments for medium-sized screens */
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 2em; /* Reduce font size for medium screens */
+        margin: 15px 0; /* Adjust margins */
+    }
+}
 
+/* Responsive adjustments for tablets */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.75em; /* Further reduce font size for smaller screens */
+        margin: 10px 0; /* Adjust margin for tablets */
+    }
+}
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em; /* Reduce font size for mobile screens */
+        margin: 8px 0; /* Adjust margins for mobile */
+    }
+}
 .view-courses {
     background-color: #42029b;
     color: white;
@@ -299,11 +387,38 @@ h1 span {
 }
 
 .view-courses:hover {
-    background-color: #6A1B9A; /* Slightly lighter shade of purple on hover */
+    background-color: #220545; /* Slightly lighter shade of purple on hover */
     transform: scale(1.05); /* Slight zoom-in effect on hover */
     color: white;
 }
+/* Responsive adjustments for medium-sized screens */
+@media (max-width: 1200px) {
+    .view-courses {
+        padding: 12px 25px; /* Slightly reduce padding */
+        font-size: 0.95em; /* Slightly reduce font size */
+    }
+}
 
+/* Responsive adjustments for tablets */
+@media (max-width: 768px) {
+    .view-courses {
+        padding: 10px 20px; /* Reduce padding for tablet-sized screens */
+        font-size: 0.9em; /* Further reduce font size for smaller screens */
+    }
+}
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 480px) {
+    .view-courses {
+        padding: 8px 15px; /* Reduce padding for mobile */
+        font-size: 0.85em; /* Make the font size smaller */
+        margin-top: 15px; /* Reduce top margin */
+    }
+
+    .view-courses:hover {
+        transform: none; /* Disable zoom effect on hover for mobile */
+    }
+}
 .image-content {
     position: relative;
     text-align: center; /* Centers the content inside the container */
@@ -315,7 +430,34 @@ h1 span {
     border-radius: 10px;
     padding-top: 20px;
 }
+/* Responsive adjustments for medium-sized screens */
+@media (max-width: 1200px) {
+    .image-content img {
+        max-width: 550px; /* Reduce max-width for medium screens */
+        padding-top: 15px; /* Adjust padding for spacing */
+    }
+}
 
+/* Responsive adjustments for tablets */
+@media (max-width: 768px) {
+    .image-content img {
+        max-width: 450px; /* Further reduce max-width for tablet-sized screens */
+        padding-top: 10px; /* Adjust padding for smaller screens */
+    }
+}
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 480px) {
+    .image-content {
+        padding: 10px; /* Reduce container padding for mobile devices */
+    }
+
+    .image-content img {
+        max-width: 100%; /* Ensure full responsiveness on mobile */
+        padding-top: 5px; /* Minimize padding on small screens */
+        border-radius: 5px; /* Slightly reduce border radius */
+    }
+}
 .stats {
     display: flex;
     gap: 20px;
@@ -350,6 +492,56 @@ h1 span {
     margin: 0;
     color: #333;
     font-size: 1.2rem;
+}
+/* Responsive adjustments for medium-sized screens */
+@media (max-width: 1200px) {
+    .stat-item {
+        padding: 12px; /* Slightly reduce padding */
+    }
+
+    .stat-item p {
+        font-size: 1.1rem; /* Slightly reduce text size */
+    }
+}
+
+/* Responsive adjustments for tablets */
+@media (max-width: 768px) {
+    .stat-item {
+        padding: 10px; /* Reduce padding for tablets */
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Reduce box shadow for smaller screens */
+    }
+
+    .stat-item:hover {
+        transform: scale(1.03); /* Reduce hover zoom effect on tablets */
+        box-shadow: 0 0 12px rgba(0, 0, 0, 0.15); /* Adjust hover shadow */
+    }
+
+    .stat-item p {
+        font-size: 1rem; /* Adjust font size for tablets */
+    }
+}
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 480px) {
+    .stat-item {
+        padding: 10px; /* Minimize padding for mobile */
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Reduce shadow for mobile screens */
+        border-radius: 6px; /* Adjust border radius for compact design */
+        padding-top:2px;
+    }
+
+    .stat-item:hover {
+        transform: scale(1.02); /* Minimize hover zoom effect for mobile */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); /* Lighter shadow for mobile */
+    }
+
+    .stat-item p {
+        font-size: 0.9rem; /* Further reduce font size for mobile */
+    }
+
+    .stat-item i {
+        margin-bottom: 8px; /* Reduce margin between icon and text */
+    }
 }
 
 .companies-section {
@@ -426,10 +618,10 @@ h1 span {
 
     @keyframes slideIn480 {
         from {
-            top: 1200px; /* Start from above the view */
+            top: 1000px; /* Start from above the view */
         }
         to {
-            top: 1200px; /* Final position where the box will be placed */
+            top: 1000px; /* Final position where the box will be placed */
         }
     }
 }
@@ -964,7 +1156,8 @@ h1 {
 .enroll, .enroll2 {
     position: absolute;
     top: -45px;
-    left: 150px;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Shift left by 50% of their width to center */
     background-color: #fff;
     padding: 5px 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -979,10 +1172,53 @@ h1 {
     gap: 5px;
 }
 
+/* Responsive design */
+@media (max-width: 1200px) {
+    .enroll, .enroll2 {
+        top: -35px;
+        padding: 2px 8px;
+        padding-left: 15px; /* Add left padding */
+        width: auto;
+    }
+}
+
+@media (max-width: 992px) {
+    .enroll, .enroll2 {
+        top: -30px;
+        padding: 1px 6px;
+        padding-left: 12px; /* Add left padding */
+    }
+}
+
+@media (max-width: 768px) {
+    .enroll, .enroll2 {
+        position: relative;
+        top: -40px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 1px 4px;
+        padding-left: 10px; /* Add left padding */
+        margin: 0 auto 10px auto;
+        width: 50%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .enroll, .enroll2 {
+        padding: 0px 3px;
+        padding-left: 8px; /* Add left padding */
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
 .enroll:hover, .enroll2:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
     background-color: #f7f7f7;
 }
+
 
 .enroll img, .enroll2 img {
     width: 30px;
@@ -1003,14 +1239,9 @@ h1 {
 .enroll img:first-child, .enroll2 img:first-child {
     margin-left: 0;
 }
-/* Responsive design */
-@media (max-width: 1200px) {
-    .enroll, .enroll2 {
-        top: -35px;
-        left: 120px;
-        padding: 2px 8px; /* Decrease top padding */
-    }
 
+/* Responsive Design */
+@media (max-width: 1200px) {
     .enroll img, .enroll2 img {
         width: 25px;
         height: 25px;
@@ -1018,12 +1249,6 @@ h1 {
 }
 
 @media (max-width: 992px) {
-    .enroll, .enroll2 {
-        top: -30px;
-        left: 100px;
-        padding: 1px 6px; /* Decrease top padding */
-    }
-
     .enroll img, .enroll2 img {
         width: 20px;
         height: 20px;
@@ -1031,16 +1256,6 @@ h1 {
 }
 
 @media (max-width: 768px) {
-    .enroll, .enroll2 {
-        position: relative;
-        top: -40px;
-        left: 0;
-        padding: 1px 4px; /* Decrease top padding */
-        margin: 0 auto 10px auto; /* Center align with auto margins */
-        text-align: center;
-        width: 50%; /* Decrease width */
-    }
-
     .enroll img, .enroll2 img {
         width: 18px;
         height: 18px;
@@ -1048,15 +1263,15 @@ h1 {
 }
 
 @media (max-width: 576px) {
-    .enroll, .enroll2 {
-        padding: 0px 3px; /* Decrease top padding */
-    }
-
     .enroll img, .enroll2 img {
         width: 16px;
         height: 16px;
     }
 }
+
+
+
+
 
 .badges {
     position: absolute;
@@ -1142,6 +1357,7 @@ h1 {
 /* Responsive design */
 @media (max-width: 1200px) {
     .designed-by {
+        position: absolute;
         top: 50px;
         right: 8px;
         padding: 4px 8px;
@@ -1151,6 +1367,7 @@ h1 {
 
 @media (max-width: 992px) {
     .designed-by {
+        position: absolute;
         top: 45px;
         right: 6px;
         padding: 3px 7px;
@@ -1160,22 +1377,25 @@ h1 {
 
 @media (max-width: 768px) {
     .designed-by {
-        position: relative;
-        top: 0;
-        right: 0;
+        position: absolute;
+        top: 30px;
+        right: 5px;
         padding: 5px;
-        margin-bottom: 10px;
-        font-size: 0.5rem;
-        width: 100px;
+        font-size: 0.75rem;
+        width: auto;
     }
 }
 
 @media (max-width: 576px) {
     .designed-by {
+        position: absolute;
+        top: 40px;
+        right: 3px;
         padding: 3px 6px;
         font-size: 0.75rem;
     }
 }
+
 .brand-logos {
     display: flex;
     flex-wrap: wrap; /* Allows wrapping for small screens */
@@ -1251,6 +1471,7 @@ h1 {
     .brand-logos .logo-container {
         width: 30px;
         height: 30px;
+        
     }
 
     .brand-logos img {
@@ -1274,34 +1495,38 @@ h1 {
 .details p, .details2 p {
     color:rgb(61, 8, 139) !important;
 }
-/* Responsive design */
+/* Responsive design for medium screens */
 @media (max-width: 1200px) {
     .details p, .details2 p {
         font-size: 0.85rem;
     }
 }
 
+/* Responsive design for small screens */
 @media (max-width: 992px) {
     .details p, .details2 p {
         font-size: 0.8rem;
     }
 }
 
+/* Responsive design for extra small screens */
 @media (max-width: 768px) {
     .details p, .details2 p {
         font-size: 0.75rem;
     }
 }
 
+/* Responsive design for very small screens */
 @media (max-width: 576px) {
     .details, .details2 {
-        flex-direction: column; /* Stack elements vertically */
-        align-items: flex-start;
+        flex-direction: row; /* Stack elements vertically on very small screens */
+        align-items: flex-start; /* Align items to the start of the container */
+        gap: 10px; /* Space between items when stacked vertically */
     }
 
     .details p, .details2 p {
-        font-size: 0.7rem;
-        margin: 3px 0;
+        font-size: 0.7rem; /* Adjust font size for small screens */
+        margin: 3px 0; /* Add vertical margin to separate text blocks */
     }
 }
 .buttons {
@@ -1345,6 +1570,7 @@ h1 {
     .buttons {
         justify-content: center;
         gap: 15px;
+        flex-wrap: wrap; /* Allow buttons to wrap if they don't fit in one row */
     }
 
     .buttons button {
@@ -1357,6 +1583,12 @@ h1 {
 }
 
 @media (max-width: 992px) {
+    .buttons {
+        justify-content: center;
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
     .buttons button {
         font-size: 0.9rem;
         padding: 8px 15px;
@@ -1369,13 +1601,14 @@ h1 {
 
 @media (max-width: 768px) {
     .buttons {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row; /* Keep buttons aligned horizontally */
+        justify-content: center; /* Ensure buttons are centered horizontally */
         gap: 10px;
+        flex-wrap: wrap; /* Allow buttons to wrap if needed */
     }
 
     .buttons button {
-        width: 100%;
+        width: auto; /* Ensure buttons don't stretch full width */
         font-size: 0.85rem;
         padding: 10px;
     }
@@ -1386,7 +1619,15 @@ h1 {
 }
 
 @media (max-width: 576px) {
+    .buttons {
+        flex-direction: row; /* Keep horizontal alignment */
+        justify-content: center; /* Center buttons */
+        gap: 10px;
+        flex-wrap: wrap; /* Allow buttons to wrap onto the next line */
+    }
+
     .buttons button {
+        width: 130px; /* Keep buttons horizontal, avoid 50% width */
         font-size: 0.8rem;
         padding: 8px;
     }
@@ -1395,6 +1636,7 @@ h1 {
         font-size: 20px;
     }
 }
+
 .container4{
     max-width: 1200px;
     margin: 50px auto;
@@ -2817,7 +3059,7 @@ button.learn-more {
         font-size: 1.1em; /* Further adjust font size for smaller screens */
     }
 
-    .profile2 img {
+    .profile img {
         width: 160px; /* Adjust image size for smaller screens */
         height: 160px;
     }
@@ -2839,7 +3081,7 @@ button.learn-more {
 }
 
 @media (max-width: 576px) {
-    .teacher-profiles2 .name {
+    .teacher-profiles2 .name2 {
         font-size: 0.9em; /* Smallest font size for very small screens */
     }
 
@@ -2852,6 +3094,7 @@ button.learn-more {
         height: 200px;
     }
 }
+
 
 
 .certificate2 {
